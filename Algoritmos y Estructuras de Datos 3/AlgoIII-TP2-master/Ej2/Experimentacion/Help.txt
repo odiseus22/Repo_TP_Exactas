@@ -1,0 +1,4 @@
+Para ejecutar y generar archivos:
+Ejecutar el generador de test correspondiente. 
+Y luego ejecutar "Ejecutar_tests.sh"
+Los resultados se guardaran en la carpeta results en distintos csv, segun el algoritmo que fue implementado.

@@ -1,0 +1,1 @@
+convert test.jpg -type Palette -depth 8 -compress none pgm:- |sed '1d;3d;' > test.pgm

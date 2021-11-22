@@ -1,0 +1,150 @@
+rm(list=ls()) 
+
+dataAsm <-read.table('dataAsm.csv',sep= ',',header = TRUE)
+dataC0 <-read.table('dataC0.csv',sep= ',',header = TRUE)  #c0=sin optimizacion
+dataC3 <-read.table('dataC3.csv',sep= ',',header = TRUE)  #c3=con optimizacion
+
+#conseguimos los distintos tamaños
+#tamanosaux <-dataexp$size
+#tamanosaux <- unique(tamanosaux)
+
+
+#HARDCODEAMOS LOS TAMAÑOS
+tamanos =c("32x16","64x32","128x64","200x100","256x128","400x200","512x256" ,"800x400","1600x800")
+
+#armemos valores para el grafico   
+
+#ASM
+i <-0
+tiemposClockAsm <- rep(0.0,9)
+tiemposMsAsm <- rep(0.0,9)
+errorMsAsm <- rep(0.0,9)
+while (i<=9){
+  tiemposClockAsm[i]<-mean(dataAsm$clocks[ dataAsm$size == tamanos[i] ])
+  tiemposMsAsm[i]<-mean(dataAsm$ms[ dataAsm$size == tamanos[i] ])
+  errorMsAsm[i]<-sd( dataAsm$ms[ dataAsm$size == tamanos[i] ] )
+  i=i+1;
+}
+
+
+#C0
+i <-0
+tiemposClockC0 <- rep(0.0,9)
+tiemposMsC0 <- rep(0.0,9)
+errorMsC0 <- rep(0.0,9)
+while (i<=9){
+  tiemposClockC0[i]<-mean(dataC0$clocks[ dataC0$size == tamanos[i] ])
+  tiemposMsC0[i]<-mean(dataC0$ms[ dataC0$size == tamanos[i] ])
+  errorMsC0[i]<-sd(dataC0$ms[ dataC0$size == tamanos[i] ])
+  i=i+1;
+}
+
+
+#C3
+i <-0
+tiemposClockC3 <- rep(0.0,9)
+tiemposMsC3 <- rep(0.0,9)
+errorMsC3 <- rep(0.0,9)
+while (i<=9){
+  tiemposClockC3[i]<-mean(dataC3$clocks[ dataC3$size == tamanos[i] ])
+  tiemposMsC3[i]<-mean(dataC3$ms[ dataC3$size == tamanos[i] ])
+  errorMsC3[i]<-sd(dataC3$ms[ dataC0$size == tamanos[i] ])
+  i=i+1;
+}
+
+
+
+RAsm<-range(tiemposMsAsm)
+RC0<-range(tiemposMsC0)
+RC3<-range(tiemposMsC3)
+
+MaxASM<-RAsm[2]
+MaxC0 <-RC0[2]
+MaxC3 <-RC3[2]
+  
+intervalos<- c(RAsm,RC0,RC3)
+
+
+MAXIMO <- as.integer(max(intervalos))+1
+x<-c(1,2,3,4,5,6,7,8,9)
+
+
+#tiemosMs    enrrealidad es tiempo de clock x1000
+plot(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsAsm,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),   ylim=c(0, MAXIMO ),main="ASM vs C0 vs C3",xaxt="n")
+lines(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsAsm,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9), col="blue")
+
+points(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsC0,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0, MAXIMO ))
+lines(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsC0,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0, MAXIMO ),    col="red")
+
+points(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsC3,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0, MAXIMO ))
+lines(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsC3,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0, MAXIMO ), col="green" )
+legend("topleft", c("Implementacion","ASM","C0","C3","Maximos",round(MaxASM),round(MaxC0),round(MaxC3)),fill=c("black","blue","red","green"))
+axis(side=1,at=x,labels=tamanos,las=0,,cex.axis=0.71)
+
+i<-1
+while(i<=9){
+  
+  #asm
+  arrows(x0=i,y0=tiemposMsAsm[i],x1=i,y1=tiemposMsAsm[i]+errorMsAsm[i],angle=90, length=0.1, col="blue", lwd=1)
+  arrows(x0=i,y0=tiemposMsAsm[i],x1=i,y1=tiemposMsAsm[i]-errorMsAsm[i],angle=90, length=0.1, col="blue", lwd=1)
+  
+  #c0
+  arrows(x0=i,y0=tiemposMsC0[i],x1=i,y1=tiemposMsC0[i]+errorMsC0[i],angle=90, length=0.1, col="red", lwd=1)
+  arrows(x0=i,y0=tiemposMsC0[i],x1=i,y1=tiemposMsC0[i]-errorMsC0[i],angle=90, length=0.1, col="red", lwd=1)
+  
+  #c3
+  arrows(x0=i,y0=tiemposMsC3[i],x1=i,y1=tiemposMsC3[i]+errorMsC3[i],angle=90, length=0.1, col="green", lwd=1)
+  arrows(x0=i,y0=tiemposMsC3[i],x1=i,y1=tiemposMsC3[i]-errorMsC3[i],angle=90, length=0.1, col="green", lwd=1)
+  
+  i=i+1
+}
+
+intervalos2<- c(RAsm,RC3)
+MAXIMO <- as.integer(max(intervalos2))+1
+
+#MENOR ESCALA
+plot(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsAsm,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0,MAXIMO),main="ASM vs C0 vs C3",xaxt="n")
+lines(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsAsm,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0,MAXIMO), col="blue")
+
+points(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsC0,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0,MAXIMO))
+lines(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsC0,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0,MAXIMO), col="red")
+
+points(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsC3,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0,MAXIMO))
+lines(x=c(1,2,3,4,5,6,7,8,9),y=tiemposMsC3,xlab = "tamaño", ylab = "tiempo MS",xlim=c(1,9),ylim=c(0,MAXIMO), col="green")
+legend("topleft", c("Implementacion","ASM","C0","C3","Maximos",round(MaxASM),round(MaxC0),round(MaxC3)),fill=c("black","blue","red","green"))
+axis(side=1,at=x,labels=tamanos,las=0,,cex.axis=0.71)
+
+i<-1
+while(i<=9){
+  
+  #asm
+  arrows(x0=i,y0=tiemposMsAsm[i],x1=i,y1=tiemposMsAsm[i]+errorMsAsm[i],angle=90, length=0.1, col="blue", lwd=1)
+  arrows(x0=i,y0=tiemposMsAsm[i],x1=i,y1=tiemposMsAsm[i]-errorMsAsm[i],angle=90, length=0.1, col="blue", lwd=1)
+  
+  #c0
+  arrows(x0=i,y0=tiemposMsC0[i],x1=i,y1=tiemposMsC0[i]+errorMsC0[i],angle=90, length=0.1, col="red", lwd=1)
+  arrows(x0=i,y0=tiemposMsC0[i],x1=i,y1=tiemposMsC0[i]-errorMsC0[i],angle=90, length=0.1, col="red", lwd=1)
+  
+  #c3
+  arrows(x0=i,y0=tiemposMsC3[i],x1=i,y1=tiemposMsC3[i]+errorMsC3[i],angle=90, length=0.1, col="green", lwd=1)
+  arrows(x0=i,y0=tiemposMsC3[i],x1=i,y1=tiemposMsC3[i]-errorMsC3[i],angle=90, length=0.1, col="green", lwd=1)
+  
+  i=i+1
+}
+
+
+
+
+#arrows(x0=6,y0=5,x1=6,y1=7,angle=90, length=0.5, col="blue", lwd=1)
+
+#arrows(x0=6,y0=5,x1=6,y1=4,angle=90, length=0.5, col="blue", lwd=1)
+         
+
+
+
+
+
+#CODIGO no usado
+#mean(  dataexp$clocks[ dataexp$size == tamanos[3]] )   
+#tamano1 <-dataexp[ dataexp$size == "128x64", ]   
+#tiempo1 <- mean(tamano1$ms)

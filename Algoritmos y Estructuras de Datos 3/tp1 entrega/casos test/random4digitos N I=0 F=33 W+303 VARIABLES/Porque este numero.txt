@@ -1,0 +1,1 @@
+ELEGIMOS hasta 33 elementos y con 4 digitos porque si poniamos mas elementos la experimentacion era muy lenta y queria lograr maximo posible( el peso llega a pasar la numero maximo en el ultimo iteracion)

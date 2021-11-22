@@ -1,0 +1,4589 @@
+
+
+----QUIT----(9 March 2021 14:58:42) CuisUniversity-4532.image priorSource: 13044060!
+
+----STARTUP---- (9 March 2021 14:58:43) as /Users/hernan/Documents/Cuis/5.0-64Bits/Cuis-University-Installer/CuisUniversity-4532.image!
+
+
+----QUIT----(9 March 2021 14:58:43) CuisUniversity-4532.image priorSource: 16885479!
+
+----STARTUP---- (15 May 2021 15:09:10) as C:\Users\recal\Desktop\windows64\CuisUniversity-4532.image!
+
+
+Object subclass: #MarsRover
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #MarsRover category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:10:30'!
+Object subclass: #MarsRover
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+TestCase subclass: #MarsTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #MarsTest category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:10:52'!
+TestCase subclass: #MarsTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:11:14'!
+test01! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:13:07' prior: 50859358!
+test01
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #North.
+	aRover interpretPackage: ''.
+	self assert: 3@4 equals: aRover position.
+	self assert: #North equals: aRover facing.! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:13:16'!
+ERROR!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:13:16'!
+ERROR!
+!MarsRover class methodsFor: 'instance creation' stamp: 'JRC 5/15/2021 15:13:27'!
+startingAt: aPoint facing: aSymbol 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeStartingAt: aPoint facing: aSymbol ! !
+!MarsRover class methodsFor: 'instance creation' stamp: 'JRC 5/15/2021 15:14:26' prior: 50859374!
+startingAt: aPoint facing: aDirection
+	^self new initializeStartingAt: aPoint facing: aDirection! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:14:27'!
+ERROR!
+
+!classDefinition: #MarsRover category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:14:56'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'point'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #MarsRover category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:14:56'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'point direction'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+!MarsRover methodsFor: 'initialization' stamp: 'JRC 5/15/2021 15:14:56'!
+initializeStartingAt: aPoint facing: aDirection 
+	self shouldBeImplemented.
+	point := aPoint.
+	direction := aDirection.! !
+!MarsRover methodsFor: 'initialization' stamp: 'JRC 5/15/2021 15:15:10' prior: 50859407!
+initializeStartingAt: aPoint facing: aDirection 
+	point := aPoint.
+	direction := aDirection.! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:15:11'!
+ERROR!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:15:58'!
+interpretPackage: aString 
+	self shouldBeImplemented.! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:16:04' prior: 50859422!
+interpretPackage: aString 
+	^self! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:16:06'!
+ERROR!
+!MarsRover methodsFor: 'properties' stamp: 'JRC 5/15/2021 15:18:23'!
+position
+	self shouldBeImplemented.! !
+!MarsRover methodsFor: 'properties' stamp: 'JRC 5/15/2021 15:19:24' prior: 50859433!
+position
+	^point! !
+
+!classDefinition: #MarsRover category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:19:47'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'position direction'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 15:19:47' prior: 50859437!
+position
+	^position! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 15:19:47' prior: 50859414!
+initializeStartingAt: aPoint facing: aDirection 
+	position := aPoint.
+	direction := aDirection.! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:19:53'!
+ERROR!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:19:53'!
+ERROR!
+!MarsRover methodsFor: 'properties' stamp: 'JRC 5/15/2021 15:20:18'!
+facing
+	self shouldBeImplemented.! !
+!MarsRover methodsFor: 'properties' stamp: 'JRC 5/15/2021 15:20:33' prior: 50859463!
+facing
+	^direction! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:20:36'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:20:39'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:21:46'!
+test02
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #North.
+	aRover interpretPackage: 'f'.
+	self assert: 3@5 equals: aRover position.
+	self assert: #North equals: aRover facing.! !
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:21:50'!
+FAILURE!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:21:50'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:23:02' prior: 50859427!
+interpretPackage: aString 
+	position := position + 0@1
+	^self! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:23:04' prior: 50859489!
+interpretPackage: aString 
+	position := position + 0@1.
+	^self! !
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:23:07'!
+ERROR!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:23:14'!
+ERROR!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:23:14'!
+ERROR!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:23:18'!
+ERROR!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:24:03' prior: 50859494!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[position := position + 0@1.].
+	^self! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:24:04'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:24:11'!
+ERROR!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:24:11'!
+ERROR!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:24:28' prior: 50859508!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[position := position + (0@1).].
+	^self! !
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:24:30'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:24:33'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:24:33'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:24:49'!
+test03
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #North.
+	aRover interpretPackage: 'b'.
+	self assert: 3@3 equals: aRover position.
+	self assert: #North equals: aRover facing.! !
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:24:54'!
+FAILURE!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:24:54'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:25:19' prior: 50859520!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[position := position + (0@1).].
+	(aString = 'b') ifTrue:[position := position - (0@1).].
+	^self! !
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:25:20'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:25:29'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:25:29'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:25:29'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:25:29'!
+PASSED!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:25:55' prior: 50859546!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[position := position + (0@1).].
+	(aString = 'b') ifTrue:[position := position - (0@1).].! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:26:26'!
+test04
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #North.
+	aRover interpretPackage: 'l'.
+	self assert: 3@3 equals: aRover position.
+	self assert: #North equals: aRover facing.! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:26:41' prior: 50859572!
+test04
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #North.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #West equals: aRover facing.! !
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:27:21'!
+FAILURE!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:27:21'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:28:28' prior: 50859565!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[position := position + (0@1).].
+	(aString = 'b') ifTrue:[position := position - (0@1).].
+	(aString = 'l') ifTrue:[ direction := #West.].! !
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:28:31'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:28:34'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:28:34'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:28:34'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:28:34'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:28:34'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:29:11' prior: 50859581!
+test04
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #North.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #East equals: aRover facing.! !
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:29:14'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:29:35' prior: 50859595!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[position := position + (0@1).].
+	(aString = 'b') ifTrue:[position := position - (0@1).].
+	(aString = 'l') ifTrue:[ direction := #West.].
+	(aString = 'r') ifTrue:[ direction := #East.].! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:30:02' prior: 50859628!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ direction := #West.].
+	(aString = 'r') ifTrue:[ direction := #East.].! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:30:37'!
+test05
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #North.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #West equals: aRover facing.! !
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 15:30:41'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:32:25'!
+test06
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #South.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #East equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:32:29'!
+FAILURE!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:32:29'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:34:47' prior: 50859639!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction = #South ifTrue: [direction := #East.].
+		direction = #North ifTrue: [direction := #West.].
+		].
+	(aString = 'r') ifTrue:[ direction := #East.].! !
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:34:55'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:34:58'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:34:58'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:34:58'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:34:58'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:34:58'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 15:34:58'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:34:58'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:35:20'!
+test07
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #South.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #West equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:35:23'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:36:12' prior: 50859674!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction = #South ifTrue: [direction := #East.].
+		direction = #North ifTrue: [direction := #West.].
+		].
+	(aString = 'r') ifTrue:[ 
+		direction = #North ifTrue: [direction := #East.].
+		direction = #South ifTrue: [direction := #West.].
+		].! !
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:36:13'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:36:13'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:36:13'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:36:13'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:36:13'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 15:36:13'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:36:13'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:36:13'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:36:25' prior: 50859704!
+test07
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #East.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #West equals: aRover facing.
+	! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:36:31' prior: 50859749!
+test07
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #East.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #South equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:36:53'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:37:36' prior: 50859715!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction = #South ifTrue: [direction := #East.].
+		direction = #North ifTrue: [direction := #West.].
+		].
+	(aString = 'r') ifTrue:[ 
+		direction = #East ifTrue: [direction := #South.].
+		direction = #North ifTrue: [direction := #East.].
+		direction = #South ifTrue: [direction := #West.].
+		].! !
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:37:37'!
+FAILURE!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:37:43'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:37:43'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:37:43'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:37:43'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:37:43'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 15:37:43'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:37:43'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:37:43'!
+FAILURE!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:37:44'!
+FAILURE!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:37:46'!
+FAILURE!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:38:30'!
+FAILURE!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:38:31'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:38:33'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:40:00' prior: 50859769!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction = #South ifTrue: [
+			direction := #East.
+			^self].
+		direction = #North ifTrue: [
+			direction := #West.
+			^self].
+		].
+	(aString = 'r') ifTrue:[ 
+		direction = #East ifTrue: [
+			direction := #South.
+			^self].
+		direction = #North ifTrue: [
+			direction := #East.
+			^self.].
+		direction = #South ifTrue: [
+			direction := #West.
+			^self.].
+		].! !
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:40:02'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:40:02'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:40:02'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:40:02'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:40:02'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 15:40:02'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:40:02'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:40:02'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:40:19' prior: 50859758!
+test07
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #East.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:40:21'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:40:50' prior: 50859818!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction = #South ifTrue: [
+			direction := #East.
+			^self].
+		direction = #North ifTrue: [
+			direction := #West.
+			^self].
+		direction = #East ifTrue: [
+			direction := #North.
+			^self].
+		].
+	(aString = 'r') ifTrue:[ 
+		direction = #East ifTrue: [
+			direction := #South.
+			^self].
+		direction = #North ifTrue: [
+			direction := #East.
+			^self.].
+		direction = #South ifTrue: [
+			direction := #West.
+			^self.].
+		].! !
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:40:51'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:40:51'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:40:51'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:40:51'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:40:51'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 15:40:51'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:40:51'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:40:51'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:41:13'!
+test08
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #East.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #South equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 15:42:29'!
+PASSED!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 15:42:37'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:42:37'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:42:37'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:42:37'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:42:37'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 15:42:37'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:42:37'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:42:37'!
+PASSED!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 15:42:37'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:42:58'!
+test09
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #West.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 15:43:02'!
+FAILURE!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 15:43:02'!
+FAILURE!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 15:43:42'!
+FAILURE!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 15:43:42'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:44:06' prior: 50859866!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction = #South ifTrue: [
+			direction := #East.
+			^self].
+		direction = #North ifTrue: [
+			direction := #West.
+			^self].
+		direction = #East ifTrue: [
+			direction := #North.
+			^self].
+		].
+	(aString = 'r') ifTrue:[ 
+		direction = #East ifTrue: [
+			direction := #South.
+			^self].
+		direction = #North ifTrue: [
+			direction := #East.
+			^self.].
+		direction = #South ifTrue: [
+			direction := #West.
+			^self.].
+		direction = #West ifTrue: [
+			direction := #North.
+			^self].
+		].! !
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 15:44:07'!
+PASSED!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 15:44:12'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:44:19'!
+test10
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #West.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #North equals: aRover facing.
+	! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 15:44:32' prior: 50860000!
+test10
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #West.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: #South equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 15:44:34'!
+FAILURE!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 15:44:40'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:45:08' prior: 50859953!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction = #South ifTrue: [
+			direction := #East.
+			^self].
+		direction = #North ifTrue: [
+			direction := #West.
+			^self].
+		direction = #East ifTrue: [
+			direction := #North.
+			^self].
+		direction = #West ifTrue: [
+			direction := #South.
+			^self.].
+		].
+	(aString = 'r') ifTrue:[ 
+		direction = #East ifTrue: [
+			direction := #South.
+			^self].
+		direction = #North ifTrue: [
+			direction := #East.
+			^self.].
+		direction = #South ifTrue: [
+			direction := #West.
+			^self.].
+		direction = #West ifTrue: [
+			direction := #North.
+			^self].
+		].! !
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 15:45:09'!
+PASSED!
+
+Object subclass: #MarsDirection
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #MarsDirection category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:47:09'!
+Object subclass: #MarsDirection
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+MarsDirection subclass: #North
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #North category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:47:40'!
+MarsDirection subclass: #North
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+MarsDirection subclass: #East
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #East category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:47:45'!
+MarsDirection subclass: #East
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+MarsDirection subclass: #South
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #South category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:47:49'!
+MarsDirection subclass: #South
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+MarsDirection subclass: #West
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #West category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:47:54'!
+MarsDirection subclass: #West
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+Object subclass: #MarsDirection
+	instanceVariableNames: 'aMarsRover'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #MarsDirection category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 15:51:43'!
+Object subclass: #MarsDirection
+	instanceVariableNames: 'aMarsRover'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:52:54' prior: 50860023!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction rotateLeft.
+		"direction = #South ifTrue: [
+			direction := #East.
+			^self].
+		direction = #North ifTrue: [
+			direction := #West.
+			^self].
+		direction = #East ifTrue: [
+			direction := #North.
+			^self].
+		direction = #West ifTrue: [
+			direction := #South.
+			^self.]."
+		].
+	(aString = 'r') ifTrue:[ 
+		direction = #East ifTrue: [
+			direction := #South.
+			^self].
+		direction = #North ifTrue: [
+			direction := #East.
+			^self.].
+		direction = #South ifTrue: [
+			direction := #West.
+			^self.].
+		direction = #West ifTrue: [
+			direction := #North.
+			^self].
+		].! !
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 15:53:01'!
+ERROR!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 15:53:01'!
+ERROR!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 15:53:20'!
+ERROR!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 15:53:28'!
+ERROR!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 15:53:28'!
+ERROR!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 15:54:50' prior: 50860144!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction rotateLeft.
+		"direction = #South ifTrue: [
+			direction := #East.
+			^self].
+		direction = #North ifTrue: [
+			direction := #West.
+			^self].
+		direction = #East ifTrue: [
+			direction := #North.
+			^self].
+		direction = #West ifTrue: [
+			direction := #South.
+			^self.]."
+		].
+	(aString = 'r') ifTrue:[ 
+		direction rotateRight.
+		"direction = #East ifTrue: [
+			direction := #South.
+			^self].
+		direction = #North ifTrue: [
+			direction := #East.
+			^self.].
+		direction = #South ifTrue: [
+			direction := #West.
+			^self.].
+		direction = #West ifTrue: [
+			direction := #North.
+			^self]."
+		].! !
+!MarsDirection methodsFor: 'no messages' stamp: 'JRC 5/15/2021 15:56:49'!
+rotateLeft
+ self subclassResponsibility ! !
+!MarsDirection methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 15:56:51' prior: 50860209!
+rotateLeft
+	 self subclassResponsibility ! !
+!MarsDirection methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 15:56:53' prior: 50860214!
+rotateLeft
+	self subclassResponsibility ! !
+!MarsDirection methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 15:56:59'!
+rotateRight
+	self subclassResponsibility ! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 15:57:57' overrides: 50860219!
+rotateLeft! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 15:58:05' prior: 50860227 overrides: 50860219!
+rotateLeft
+	! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 15:59:22' prior: 50860231 overrides: 50860219!
+rotateLeft
+	aMarsRover rotateLeftFromEast.! !
+!MarsDirection methodsFor: 'initialization' stamp: 'JRC 5/15/2021 16:00:41'!
+initializeWith: aRover
+	aMarsRover := aRover.! !
+!North methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:02:02' overrides: 50860219!
+rotateLeft
+	aMarsRover rotateLeftFromNorth.! !
+!South methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:02:19' overrides: 50860219!
+rotateLeft
+	aMarsRover rotateLeftFromSouth.! !
+!West methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:02:34' overrides: 50860219!
+rotateLeft
+	aMarsRover rotateLeftFromWest.! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:02:49' overrides: 50860223!
+rotateRight
+	aMarsRover rotateRightFromEast.! !
+!North methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:02:59' overrides: 50860223!
+rotateRight
+	aMarsRover rotateRightFromNorth.! !
+!South methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:03:06' prior: 50860249 overrides: 50860219!
+rotateLeft
+	aMarsRover rotateRightFromSouth.! !
+!South methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:03:14' prior: 50860269 overrides: 50860219!
+rotateLeft
+	aMarsRover rotateLeftFromSouth.! !
+!South methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:03:21' overrides: 50860223!
+rotateRight
+	aMarsRover rotateRightFromSouth.! !
+!West methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:03:32' overrides: 50860223!
+rotateRight
+	aMarsRover rotateRightFromWest.! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 16:03:51'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 16:03:51'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 16:03:51'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:03:51'!
+ERROR!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 16:03:51'!
+ERROR!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 16:03:51'!
+ERROR!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 16:03:51'!
+ERROR!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 16:03:51'!
+ERROR!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 16:03:51'!
+ERROR!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 16:03:51'!
+ERROR!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:05:40' prior: 50859361!
+test01
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: #East.
+	aRover interpretPackage: ''.
+	self assert: 3@4 equals: aRover position.
+	self assert: #North equals: aRover facing.! !
+
+----SNAPSHOT----(15 May 2021 16:06:32) CuisUniversity-4532.image priorSource: 16885703!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:12:55' prior: 50860310!
+test01
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: (North new initializeWith: aRover).
+	aRover interpretPackage: ''.
+	self assert: 3@4 equals: aRover position.
+	self assert: #North equals: aRover facing.! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:13:45' prior: 50860322!
+test01
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: (North new initializeWith: aRover).
+	aRover interpretPackage: ''.
+	self assert: 3@4 equals: aRover position.
+	self assert: North new equals: aRover facing.! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 16:13:53'!
+FAILURE!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 16:13:53'!
+FAILURE!
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:15:08' prior: 50860235 overrides: 50860219!
+rotateLeft
+	^North new.! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:15:56' prior: 50860259 overrides: 50860223!
+rotateRight
+	^South new.! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:16:04' prior: 50860351 overrides: 50860223!
+rotateRight
+	^South.! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:16:09' prior: 50860347 overrides: 50860219!
+rotateLeft
+	^North.! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:16:26'!
+Left
+	^North.! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:16:34'!
+Right
+	^South.! !
+!North methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:17:08'!
+left
+	West! !
+!North methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:17:18'!
+right
+	^East! !
+!North methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:17:24' prior: 50860368!
+left
+	^West! !
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:17:33'!
+right
+	^South.! !
+
+!methodRemoval: East #Right stamp: 'JRC 5/15/2021 16:17:33'!
+Right
+	^South.!
+!East methodsFor: 'Rotations' stamp: 'JRC 5/15/2021 16:17:38'!
+left
+	^North.! !
+
+!methodRemoval: East #Left stamp: 'JRC 5/15/2021 16:17:38'!
+Left
+	^North.!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:17:50' prior: 50860332!
+test01
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: (North).
+	aRover interpretPackage: ''.
+	self assert: 3@4 equals: aRover position.
+	self assert: North new equals: aRover facing.! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:17:56' prior: 50860388!
+test01
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: (North).
+	aRover interpretPackage: ''.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 16:17:58'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:18:17' prior: 50859475!
+test02
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'f'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.! !
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 16:18:19'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:18:24' prior: 50859532!
+test03
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'b'.
+	self assert: 3@3 equals: aRover position.
+	self assert: North equals: aRover facing.! !
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 16:18:29'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:18:34' prior: 50859617!
+test04
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: East equals: aRover facing.! !
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:18:36'!
+ERROR!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:18:36'!
+ERROR!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:18:49'!
+ERROR!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:18:59'!
+ERROR!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:18:59'!
+ERROR!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:19:17' prior: 50860182!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction Left.
+		"direction = #South ifTrue: [
+			direction := #East.
+			^self].
+		direction = #North ifTrue: [
+			direction := #West.
+			^self].
+		direction = #East ifTrue: [
+			direction := #North.
+			^self].
+		direction = #West ifTrue: [
+			direction := #South.
+			^self.]."
+		].
+	(aString = 'r') ifTrue:[ 
+		direction Right.
+		"direction = #East ifTrue: [
+			direction := #South.
+			^self].
+		direction = #North ifTrue: [
+			direction := #East.
+			^self.].
+		direction = #South ifTrue: [
+			direction := #West.
+			^self.].
+		direction = #West ifTrue: [
+			direction := #North.
+			^self]."
+		].! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:19:31' prior: 50860450!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction := direction Left.
+		"direction = #South ifTrue: [
+			direction := #East.
+			^self].
+		direction = #North ifTrue: [
+			direction := #West.
+			^self].
+		direction = #East ifTrue: [
+			direction := #North.
+			^self].
+		direction = #West ifTrue: [
+			direction := #South.
+			^self.]."
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction Right.
+		"direction = #East ifTrue: [
+			direction := #South.
+			^self].
+		direction = #North ifTrue: [
+			direction := #East.
+			^self.].
+		direction = #South ifTrue: [
+			direction := #West.
+			^self.].
+		direction = #West ifTrue: [
+			direction := #North.
+			^self]."
+		].! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:19:38' prior: 50860477!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.
+		"direction = #South ifTrue: [
+			direction := #East.
+			^self].
+		direction = #North ifTrue: [
+			direction := #West.
+			^self].
+		direction = #East ifTrue: [
+			direction := #North.
+			^self].
+		direction = #West ifTrue: [
+			direction := #South.
+			^self.]."
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		"direction = #East ifTrue: [
+			direction := #South.
+			^self].
+		direction = #North ifTrue: [
+			direction := #East.
+			^self.].
+		direction = #South ifTrue: [
+			direction := #West.
+			^self.].
+		direction = #West ifTrue: [
+			direction := #North.
+			^self]."
+		].! !
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:19:39'!
+ERROR!
+!East class methodsFor: 'no messages' stamp: 'JRC 5/15/2021 16:19:59'!
+left
+	^North.! !
+!North class methodsFor: 'no messages' stamp: 'JRC 5/15/2021 16:20:26'!
+left
+	^West! !
+!North class methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:20:36'!
+right
+	^East! !
+
+!methodRemoval: East #rotateLeft stamp: 'JRC 5/15/2021 16:20:43'!
+rotateLeft
+	^North.!
+
+!methodRemoval: East #rotateRight stamp: 'JRC 5/15/2021 16:20:47'!
+rotateRight
+	^South.!
+
+!methodRemoval: North #rotateLeft stamp: 'JRC 5/15/2021 16:20:50'!
+rotateLeft
+	aMarsRover rotateLeftFromNorth.!
+
+!methodRemoval: North #rotateRight stamp: 'JRC 5/15/2021 16:20:51'!
+rotateRight
+	aMarsRover rotateRightFromNorth.!
+
+!methodRemoval: North #right stamp: 'JRC 5/15/2021 16:20:54'!
+right
+	^East!
+
+!methodRemoval: North #left stamp: 'JRC 5/15/2021 16:21:02'!
+left
+	^West!
+
+!methodRemoval: West #rotateRight stamp: 'JRC 5/15/2021 16:21:05'!
+rotateRight
+	aMarsRover rotateRightFromWest.!
+
+!methodRemoval: West #rotateLeft stamp: 'JRC 5/15/2021 16:21:06'!
+rotateLeft
+	aMarsRover rotateLeftFromWest.!
+
+!methodRemoval: South #rotateRight stamp: 'JRC 5/15/2021 16:21:08'!
+rotateRight
+	aMarsRover rotateRightFromSouth.!
+
+!methodRemoval: South #rotateLeft stamp: 'JRC 5/15/2021 16:21:09'!
+rotateLeft
+	aMarsRover rotateLeftFromSouth.!
+
+!methodRemoval: East #left stamp: 'JRC 5/15/2021 16:21:13'!
+left
+	^North.!
+
+!methodRemoval: East #right stamp: 'JRC 5/15/2021 16:21:15'!
+right
+	^South.!
+
+!methodRemoval: MarsDirection #rotateLeft stamp: 'JRC 5/15/2021 16:21:22'!
+rotateLeft
+	self subclassResponsibility !
+
+!methodRemoval: MarsDirection #rotateRight stamp: 'JRC 5/15/2021 16:21:23'!
+rotateRight
+	self subclassResponsibility !
+
+!methodRemoval: MarsDirection #initializeWith: stamp: 'JRC 5/15/2021 16:21:25'!
+initializeWith: aRover
+	aMarsRover := aRover.!
+
+Object subclass: #MarsDirection
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!classDefinition: #MarsDirection category: 'Mars-Rover-Ejercicio' stamp: 'JRC 5/15/2021 16:21:29'!
+Object subclass: #MarsDirection
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover-Ejercicio'!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 16:21:56'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:22:00'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:22:09' prior: 50859649!
+test05
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: West equals: aRover facing.! !
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 16:22:09'!
+PASSED!
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 16:22:09'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 16:22:09'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 16:22:09'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:22:09'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 16:22:09'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 16:22:09'!
+ERROR!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 16:22:09'!
+ERROR!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 16:22:09'!
+ERROR!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 16:22:09'!
+ERROR!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 16:22:09'!
+ERROR!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 16:22:11'!
+ERROR!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:22:21' prior: 50859660!
+test06
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: South.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: East equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 16:22:21'!
+ERROR!
+!South class methodsFor: 'rotation' stamp: 'JRC 5/15/2021 16:23:04'!
+left
+	self shouldBeImplemented.! !
+!South class methodsFor: 'rotation' stamp: 'JRC 5/15/2021 16:23:14' prior: 50860655!
+left
+	East! !
+!South class methodsFor: 'rotation' stamp: 'JRC 5/15/2021 16:23:18' prior: 50860659!
+left
+	^East! !
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 16:23:19'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 16:23:25'!
+ERROR!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:23:31' prior: 50859855!
+test07
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 16:23:33'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 16:23:33'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 16:23:34'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:23:34'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 16:23:34'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 16:23:34'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 16:23:34'!
+PASSED!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 16:23:34'!
+ERROR!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 16:23:34'!
+ERROR!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 16:23:34'!
+ERROR!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:23:39' prior: 50859905!
+test08
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:23:42' prior: 50859935!
+test09
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: West.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:23:46' prior: 50860009!
+test10
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: West.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 16:23:47'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 16:23:47'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 16:23:47'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:23:47'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 16:23:47'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 16:23:47'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 16:23:47'!
+PASSED!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 16:23:47'!
+ERROR!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 16:23:47'!
+ERROR!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 16:23:47'!
+ERROR!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 16:23:49'!
+ERROR!
+!East class methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:24:20'!
+right
+	^South.! !
+!South class methodsFor: 'rotation' stamp: 'JRC 5/15/2021 16:24:38'!
+right
+	^West! !
+!West class methodsFor: 'rotation' stamp: 'JRC 5/15/2021 16:25:31'!
+left
+	^South! !
+!West class methodsFor: 'rotation' stamp: 'JRC 5/15/2021 16:25:42'!
+right
+	^North! !
+
+!testRun: #MarsTest #test01 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+
+!testRun: #MarsTest #test02 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+
+!testRun: #MarsTest #test03 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+
+!testRun: #MarsTest #test04 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+
+!testRun: #MarsTest #test05 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+
+!testRun: #MarsTest #test06 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+
+!testRun: #MarsTest #test07 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+
+!testRun: #MarsTest #test08 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+
+!testRun: #MarsTest #test09 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+
+!testRun: #MarsTest #test10 stamp: 'JRC 5/15/2021 16:25:49'!
+PASSED!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:26:37' prior: 50860505!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[ position := position + (0@1).].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.	
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		].! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:27:42'!
+test01DoingNothingKeepsDirectionAndPosition
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: (North).
+	aRover interpretPackage: ''.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.! !
+!NotDoingTDDTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50853896!
+test11WhenATestIsRenamedIsStillNotDoingTDD
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: false' in: #TestClassA.
+	tddGuru initialState: NotDoingTDD new.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+	
+	self logChangesWhile: [ 
+		self compileMethod: 'test01bla self assert: false' in: #TestClassA.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestClassA ].
+	
+	tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD ! !
+!OtherTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854321!
+test08ReRunTheWholeAnalysis
+	| result changes |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA
+	].
+		
+	result _ tddGuru run.
+	
+	self logChangesWhile: [ 
+		self compileMethod: 'test01 self assert: true' in: #TestClassA.
+	].
+
+	result _ tddGuru rerun.
+	changes := result changes.
+	self assert: changes size equals: 4.
+
+	! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854607!
+test11WhenATestClassIsAddedIsStillInRed
+	| result |
+		
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self newClassNamed: #TestSomethingB subclassOf: TestCase. ].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: Red.
+	self assertHasNoErrors: result.! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50855549!
+test19AnotherTestIsRemovedAnErrorIsReportedAndIsStillWritingAFailingTest
+	| result |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self newClassNamed: #TestClassB subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true.' in: #TestClassA.
+	self compileMethod: 'test01 self assert: true.' in: #TestClassB.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA . self classNamed: #TestClassB }.
+	
+	self logChangesWhile: [ 
+		self compileMethod: 'test02 self assert: false.' in: #TestClassA.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestClassB ].
+		
+	result _ tddGuru run.
+		
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru methodRemovedWhileWritingATest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassB).
+	self assert: tddGuru currentState equals: WritingAFailingTest.! !
+!OtherTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854287!
+test06WhenATestHasAnErrorThisTestDoesNotFail
+	| result changes |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 ^ self error: ''An error''' in: #TestClassA.
+	
+	self logChangesWhile: [ 
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA
+	].
+		
+	result _ tddGuru run.
+	changes := result changes.
+	self assert: changes size equals: 1.
+	self assert: changes first category equals: #testRun.
+	self assert: changes first testSelector equals: #test01DoingNothingKeepsDirectionAndPosition.
+	! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50855474!
+test15WhenTheTestIsRemovedThenIsInGreen
+	| result |
+
+	self logChangesWhile: [ 	
+		self newClassNamed: #TestSomethingA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: true' in: #TestSomethingA.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestSomethingA.
+	].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: Green.
+	self assertHasNoErrors: result.
+! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50855489!
+test16WhenATestIsRenamedThenIsStillWritingAFailingTest
+	| result |
+	
+	self newClassNamed: #TestSomethingA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestSomethingA.
+	tddGuru initialTestClasses: { self classNamed: #TestSomethingA }.
+
+	self logChangesWhile: [ 	
+		self compileMethod: 'test02 self assert: false' in: #TestSomethingA.
+		self compileMethod: 'test01A self assert: true' in: #TestSomethingA.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestSomethingA.
+		self compileMethod: 'test02 self assert: false' in: #TestSomethingA.
+	].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: WritingAFailingTest.
+	self assertHasNoErrors: result.
+! !
+!RefactorTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854766!
+test05WhenATestIsRenamedIsStillRefactoring
+	| result |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: false' in: #TestClassA.
+	tddGuru initialState: Refactor new.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA}.
+	
+	self logChangesWhile: [  
+		self compileMethod: 'test01A self assert: true' in: #TestClassA.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestClassA ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Refactor.! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50855368!
+test11WhenATestWithTheSameNameIsChangedInOtherClassThenIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestSomethingA subclassOf: TestCase.
+	self newClassNamed: #TestSomethingB subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestSomethingA.
+	self compileMethod: 'test01 self assert: true' in: #TestSomethingB.
+	
+	tddGuru initialTestClasses: { self classNamed: #TestSomethingA. self classNamed: #TestSomethingB }.
+	tddGuru initialState: (WritingAFailingTest currentTest: (UninstalledMethodReference selector: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomethingA)).
+	
+	self logChangesWhile: [ 	
+		self compileMethod: 'test01 self assert: false' in: #TestSomethingB.
+	].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasErrorWithDescription: (TDDGuru testChangedWhileThisTestWasBeingWritten:  #test01DoingNothingKeepsDirectionAndPosition in: #TestSomethingB)! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50853412!
+test03WhenTheFirstOfTheTestsIsRemovedIsBackToWritingAFailingTest
+	| result |
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from:  #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertHasNoErrors: result.
+	self assertCurrentStateIs: WritingAFailingTest.
+	self assert: tddGuru currentState currentTest selector equals: #test02
+	! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50853649!
+test14WhenOneOfTheTestsPassesTwoErrorsAreReported
+	| result |
+	
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: true' in: #TestClassA.
+		self compileMethod: 'test02 self assert: true' in: #TestClassA.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: MoreThanOneTestWritten.
+	self assert: result hasNErrors: 2.
+	self assert: result hasErrorWithDescription: (TDDGuru testDidNotFail: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA).
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02 class: #TestClassA)! !
+!NotDoingTDDTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50853878!
+test10WhenOneOfTheTestIsNotRunThenIsStillNotDoingTDD
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 ^ self assert: true' in: #TestClassA.
+	self compileMethod: 'test02 ^ self assert: true' in: #TestClassA.
+
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+	tddGuru initialState: NotDoingTDD new.
+	
+	self logChangesWhile: [ self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA ].
+	
+	tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD ! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50855398!
+test12WhenADifferentTestIsChangedThenIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestSomethingA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: false' in: #TestSomethingA.
+	self compileMethod: 'test02 self assert: false' in: #TestSomethingA.
+	tddGuru initialState: (WritingAFailingTest currentTest: (UninstalledMethodReference selector: #test02 class: #TestSomethingA)).
+	tddGuru initialTestClasses: { self classNamed: #TestSomethingA}.
+	
+	self logChangesWhile: [ 	
+		self compileMethod: 'test01 self assert: true' in: #TestSomethingA.
+	].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testChangedWhileThisTestWasBeingWritten: #test01DoingNothingKeepsDirectionAndPosition in: #TestSomethingA)
+	! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50855594!
+test21WhenAModelMethodIsAddedBeforeRunningTestsThenIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #ModelClass subclassOf: Object.
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: #test01DoingNothingKeepsDirectionAndPosition in: #TestSomething.
+		self compileMethod: 'm1 ^ 1' in: #ModelClass ].
+		
+	result _ tddGuru run.
+		
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru modelMethodAddedBeforeRunningTests: #m1 class: #ModelClass).
+	self assert: tddGuru currentState equals: NotDoingTDD.! !
+!NotDoingTDDTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50853846!
+test08WhenThereIsOneTestAndPassesThenIsInGreen
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestClassA.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA}.
+	tddGuru initialState: (NotDoingTDD new).
+	
+	self logChangesWhile: [ self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA ].
+	
+	tddGuru run.
+	
+	self assertCurrentStateIs: Green ! !
+!OtherTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854226!
+test03TDDStateForEachChange
+	| result firstChange secondChange thirdChange changes |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestClass subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestClass.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClass
+	].
+		
+	result _ tddGuru run.
+		
+	changes := result changes.
+	firstChange := changes first.
+	secondChange := changes second.
+	thirdChange := changes third.
+	
+	self assert: (result stateAfter: firstChange) equals: WritingAFailingTest .
+	self assert: (result stateAfter: secondChange) equals: WritingAFailingTest .
+	self assert: (result stateAfter: thirdChange) equals: Red .! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50853629!
+test13WhenATestFailsAnErrorIsReportedAndGoesToRed
+	| result |
+	
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: Red.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02 class: #TestClassA)! !
+!OtherTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854305!
+test07RunFromASpecificChange
+	| result changes |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #ExampleClass subclassOf: Object.
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 ^ self error: ''An error''' in: #TestClassA.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA
+	].
+		
+	tddGuru startingFromChange: 2.
+	result _ tddGuru run.
+	changes := result changes.
+	self assert: changes size equals: 3.
+
+	! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854427!
+test04WhenTheTestFailsIsStillInRed
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: (ModelClass new m1) equals: 1.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self newClassNamed: #ModelClass subclassOf: Object. 
+		self compileMethod: 'm1 ^ 2' in: #ModelClass.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Red.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854446!
+test05WhenAProductionMethodIsChangedIsStillInRed
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self newClassNamed: #ModelClass subclassOf: Object. 
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self compileMethod: 'm1 ^ 2' in: #ModelClass ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Red.! !
+!GreenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50853240!
+test09WhenATestHasAnErrorAnErrorIsReportedAndTransitionsToRed
+	| result |
+	
+	self newClassNamed: #TestClass subclassOf: TestCase.
+	self compileMethod: 'test01 self error' in: #TestClass. 
+	tddGuru initialState: Green new.
+	tddGuru initialTestClasses: { self classNamed: #TestClass }.
+	
+	self logChangesWhile: [ self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClass ].
+		
+	result _ tddGuru run.
+		
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testUnexpectedlyFailedErrorMessage: #test01DoingNothingKeepsDirectionAndPosition class: #TestClass).
+	self assert: tddGuru currentState equals: Red.
+	! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854541!
+test09WhenATestIsRenamedAndAllTestsPassThenIsInGreen
+	| result |
+	self newClassNamed: #ModelClass subclassOf: Object.
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: (ModelClass new m1) equals: 1.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'test02 self assert: (ModelClass new m2) equals: 2.' in: #TestSomething.
+		self runTest: #test02 class: #TestSomething.
+		self compileMethod: 'test02A self assert: (ModelClass new m2) equals: 2.' in: #TestSomething.
+		self removeMethodWithSelector: #test02 from: #TestSomething.
+		self compileMethod: 'm2 ^ 2' in: #ModelClass.
+		self runAllTestsOf: #TestSomething ].
+
+	result _ tddGuru run.
+	
+	self assertHasNoErrors: result.
+	self assertCurrentStateIs: Green.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854408!
+test03WhenTheTestPassesThenIsInGreen
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: (ModelClass new m1) equals: 1.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self newClassNamed: #ModelClass subclassOf: Object. 
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Green.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:42' prior: 50854465!
+test06WhenTheNewTestPassesButAnotherTestFailsThenIsStillInRed
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: (ModelClass new m1) equals: 1.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self newClassNamed: #ModelClass subclassOf: Object. 
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'test02 self assert: (ModelClass new m1) equals: 2.' in: #TestSomething.
+		self runTest: #test02 class: #TestSomething.
+		self compileMethod: 'm1 ^ 2' in: #ModelClass.
+		self runAllTestsOf: #TestSomething ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Red.! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50855426!
+test13WhenATestWithTheSameNameIsAddedInOtherClassThenIsInMoreThanOneTestWritten
+	| result |
+	
+	self newClassNamed: #TestSomethingA subclassOf: TestCase.
+	self newClassNamed: #TestSomethingB subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestSomethingA.
+	
+	tddGuru initialTestClasses: { self classNamed: #TestSomethingA. self classNamed: #TestSomethingB }.
+	tddGuru initialState: (WritingAFailingTest currentTest: (UninstalledMethodReference selector: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomethingA)).
+	
+	self logChangesWhile: [ 	
+		self compileMethod: 'test01 self assert: false' in: #TestSomethingB.
+	].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: MoreThanOneTestWritten .
+	self assertHasNoErrors: result.
+! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50855531!
+test18WhenTheTestPassesAnErrorIsReportedAndGoesToGreen
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: true.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething ].
+		
+	result _ tddGuru run.
+		
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testDidNotFail: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething).
+	self assert: tddGuru currentState equals: Green.! !
+!GreenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50853209!
+test07WhenATestPassesNothingHappens
+	| result |
+	
+	self newClassNamed: #TestClass subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestClass.
+	tddGuru initialState: Green new.
+	tddGuru initialTestClasses: { self classNamed: #TestClass }.
+	
+	self logChangesWhile: [ self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClass ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Green.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854661!
+test14WhenATestIsRemovedResultShouldHaveAnErrorAndIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestSomething subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true.' in: #TestSomething.
+	tddGuru initialTestClasses: { self classNamed: #TestSomething }.
+		
+	self logChangesWhile: [ 
+		self compileMethod: 'test02 self assert: false.' in: #TestSomething. 
+		self runTest: #test02 class: #TestSomething.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestSomething. ].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasErrorWithDescription: (TDDGuru testRemovedWhileInRed: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething)! !
+!NotStartedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854177!
+test13WhenATestIsRenamedThenIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestSomething subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestSomething.
+	
+	tddGuru initialTestClasses: { self classNamed: #TestSomething}.
+	
+	self logChangesWhile: [ 
+		self compileMethod: 'test01A self assert: false' in: #TestSomething. 
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestSomething ].
+		
+	result _ tddGuru run.
+		
+	self assert: tddGuru currentState equals: NotDoingTDD.
+	self assert: result hasErrorWithDescription: (TDDGuru testRenamedBeforeRunningTheTests: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething)! !
+!OtherTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854207!
+test02ResultKnowsTheChangesThatWereDone
+	| result changes |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestClass subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestClass. 
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClass.
+	].
+		
+	result _ tddGuru run.
+	
+	changes := result changes.
+	self assert: changes size equals: 3.
+	self assert: changes first category equals: #newTestClass.
+	self assert: changes second category equals: #newTest.
+	self assert: changes third category equals: #testRun.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854391!
+test02WhenAProductionMethodIsAddedIsStillInRed
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self newClassNamed: #ModelClass subclassOf: Object. 
+		self compileMethod: 'm1 ^ 1' in: #ModelClass ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Red.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854492!
+test07WhenAllTestsPassThenIsInGreen
+	| result |
+	self newClassNamed: #ModelClass subclassOf: Object.
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: (ModelClass new m1) equals: 1.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'test02 self assert: (ModelClass new m2) equals: 2.' in: #TestSomething.
+		self runTest: #test02 class: #TestSomething.
+		self compileMethod: 'm1 ^ 2' in: #ModelClass.
+		self compileMethod: 'm2 ^ 2' in: #ModelClass.
+		self runAllTestsOf: #TestSomething.
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self runAllTestsOf: #TestSomething ].
+
+	result _ tddGuru run.
+	
+	self assertHasNoErrors: result.
+	self assertCurrentStateIs: Green.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854623!
+test12WhenTheTestIsChangedIsStillInRed
+	| result |
+	
+	self newClassNamed: #ModelClass subclassOf: Object. 
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'test01 self assert: true.' in: #TestSomething. ].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: Red.
+	self assertHasNoErrors: result.! !
+!RefactorTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854909!
+test13WhenATestIsRemovedIsNoLongerTakenIntoAccount
+	| result |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestClassA.
+	self compileMethod: 'test02 self assert: true' in: #TestClassA.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+	
+	tddGuru initialState: Refactor new.
+	
+	self logChangesWhile: [ 
+		self removeMethodWithSelector: #test02 from: #TestClassA.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Green.! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50855578!
+test20WhenAFirstTestIsAddedIsStillWritingAFailingTest
+	| result |
+	
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: true.' in: #TestClassA. ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assertCurrentStateIs: WritingAFailingTest.
+	self assert: tddGuru currentState currentTest selector equals: #test01DoingNothingKeepsDirectionAndPosition.! !
+!GreenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50853281!
+test11WhenATestFailsAnErrorIsReportedAndTransitionsToRed
+	| result |
+	
+	self newClassNamed: #TestClass subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: false' in: #TestClass.
+	tddGuru initialState: Green new.
+	tddGuru initialTestClasses: { self classNamed: #TestClass }.
+	
+	self logChangesWhile: [ self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClass ].
+		
+	result _ tddGuru run.
+		
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testUnexpectedlyFailedErrorMessage: #test01DoingNothingKeepsDirectionAndPosition class: #TestClass).
+	self assert: tddGuru currentState equals: Red.! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50853718!
+test17WhenAnotherTestIsRenamedIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestClassA.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+	
+	self logChangesWhile: [
+		self compileMethod: 'test02 self assert: true' in: #TestClassA.
+		self compileMethod: 'test03 self assert: true' in: #TestClassA.
+		self compileMethod: 'test01bla self assert: true' in: #TestClassA.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test03 class: #TestClassA)! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854522!
+test08WhenATestIsAddedIsNotDoingTDD
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'test02 self assert: false.' in: #TestSomething. ].
+		
+	result _ tddGuru run.
+		
+	self assert: tddGuru currentState equals: NotDoingTDD.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedErrorMessage: #test02 class: #TestSomething).! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854591!
+test11WhenAModelClassIsRemovedIsStillInRed
+	| result |
+	
+	self newClassNamed: #ModelClass subclassOf: Object. 
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self removeClass: #ModelClass ].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: Red.
+	self assertHasNoErrors: result.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854572!
+test10WhenAModelMethodIsRemovedIsStillInRed
+	| result |
+	
+	self newClassNamed: #ModelClass subclassOf: Object. 
+	self compileMethod: 'm1 ^ 1.' in: #ModelClass.
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self removeMethodWithSelector: #m1 from: #ModelClass ].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: Red.
+	self assertHasNoErrors: result.! !
+!RefactorTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50855156!
+test23WhenATestClassIsRenamedThoseTestsAreStillTakenIntoAccount
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: ModelClassA new m1 equals: 1' in: #TestClassA.
+		self runAllTestsOf: #TestClassA.
+		self newClassNamed: #ModelClassA subclassOf: Object.
+		self compileMethod: 'm1 ^ 1' in: #ModelClassA.
+		self runAllTestsOf: #TestClassA.
+		self renameClass: #TestClassA to: #TestClassB.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassB
+	].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: Green.
+	self assertHasNoErrors: result ! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50853432!
+test04WhenAnotherTestIsRemovedIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: false' in: #TestClassA.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassB subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassB.
+		self compileMethod: 'test02 self assert: false' in: #TestClassB.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from:  #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1. 
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother:  #test02 class: #TestClassB).! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50853673!
+test15WhenAllOfTheTestsPassErrorsAreReportedAndGoesToGreen
+	| result |
+	
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: true' in: #TestClassA.
+		self compileMethod: 'test02 self assert: true' in: #TestClassA.
+		self runAllTestsOf: #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: Green.
+	self assert: result hasNErrors: 3.
+	self assert: result hasErrorWithDescription: (TDDGuru testDidNotFail: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA).
+	self assert: result hasErrorWithDescription: (TDDGuru testDidNotFail: #test02 class: #TestClassA).
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02 class: #TestClassA)! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50855244!
+test04WhenATestFailsThenIsInRedState
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Red.! !
+!NotStartedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854157!
+test12WhenATestIsChangedThenIsWritingAFailingTest
+	| result |
+	
+	self newClassNamed: #TestSomething subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestSomething.
+	
+	tddGuru initialTestClasses: { self classNamed: #TestSomething}.
+	
+	self logChangesWhile: [ self compileMethod: 'test01 self assert: false' in: #TestSomething. ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: WritingAFailingTest.
+	self assert: tddGuru currentState currentTest selector equals: #test01DoingNothingKeepsDirectionAndPosition.! !
+!OtherTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854338!
+test09ReRunFromASpecificChange
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #ModelClassA subclassOf: Object.
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA
+	].
+		
+	tddGuru startingFromChange: 2.
+	tddGuru run.
+	
+	self logChangesWhile: [ 
+		self compileMethod: 'test01 self assert: true' in: #TestClassA.
+	].
+
+	result _ tddGuru rerun.
+	self assert: result changes size equals: 4.
+
+	! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50853392!
+test02WhenTheLastOfTheTestsIsRemovedIsBackToWritingAFailingTest
+	| result |
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self removeMethodWithSelector: #test02 from:  #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertHasNoErrors: result.
+	self assertCurrentStateIs: WritingAFailingTest.
+	self assert: tddGuru currentState currentTest selector equals: #test01DoingNothingKeepsDirectionAndPosition
+	! !
+!GreenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50853261!
+test10WhenATestIsRenamedThenIsRefactoring
+	| result |
+	
+	self newClassNamed: #TestClass subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: false' in: #TestClass.
+	tddGuru initialState: Green new.
+	tddGuru initialTestClasses: { self classNamed: #TestClass }.
+	
+	self logChangesWhile: [ 
+		self compileMethod: 'test01A self assert: true' in: #TestClass.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestClass ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Refactor.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:27:43' prior: 50854375!
+test01WhenAProductionClassIsAddedIsStillInRed
+	| result  |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self newClassNamed: #ProductionClass subclassOf: Object ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Red.! !
+
+!methodRemoval: MarsTest #test01 stamp: 'JRC 5/15/2021 16:27:43'!
+test01
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: (North).
+	aRover interpretPackage: ''.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:28:31'!
+test02fowardNorthGoesNorth
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'f'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50861538!
+test07WhenAllTestsPassThenIsInGreen
+	| result |
+	self newClassNamed: #ModelClass subclassOf: Object.
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: (ModelClass new m1) equals: 1.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'test02 self assert: (ModelClass new m2) equals: 2.' in: #TestSomething.
+		self runTest: #test02fowardNorthGoesNorth class: #TestSomething.
+		self compileMethod: 'm1 ^ 2' in: #ModelClass.
+		self compileMethod: 'm2 ^ 2' in: #ModelClass.
+		self runAllTestsOf: #TestSomething.
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self runAllTestsOf: #TestSomething ].
+
+	result _ tddGuru run.
+	
+	self assertHasNoErrors: result.
+	self assertCurrentStateIs: Green.! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50853566!
+test10WhenATestClassIsAddedIsNotDoingTDD
+	| result |
+	
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self newClassNamed: #TestClassB subclassOf: TestCase.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA)! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50853699!
+test16WhenOneOfTheTestsIsRenamedIsStillInThisState
+	| result |
+	
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: true' in: #TestClassA.
+		self compileMethod: 'test02 self assert: true' in: #TestClassA.
+		self compileMethod: 'test02bla self assert: true' in: #TestClassA.
+		self removeMethodWithSelector: #test02fowardNorthGoesNorth from: #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: MoreThanOneTestWritten.
+	self assertHasNoErrors: result.! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50853481!
+test06WhenAModelMethodIsChangedIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #ModelClass subclassOf: Object.
+	self compileMethod: 'm1 ^ 1' in: #ModelClass.
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self compileMethod: 'm1 ^ 2' in: #ModelClass.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1. 
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA).! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50861181!
+test13WhenATestFailsAnErrorIsReportedAndGoesToRed
+	| result |
+	
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: Red.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA)! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50861885!
+test02WhenTheLastOfTheTestsIsRemovedIsBackToWritingAFailingTest
+	| result |
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self removeMethodWithSelector: #test02fowardNorthGoesNorth from:  #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertHasNoErrors: result.
+	self assertCurrentStateIs: WritingAFailingTest.
+	self assert: tddGuru currentState currentTest selector equals: #test01DoingNothingKeepsDirectionAndPosition
+	! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50861445!
+test14WhenATestIsRemovedResultShouldHaveAnErrorAndIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestSomething subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true.' in: #TestSomething.
+	tddGuru initialTestClasses: { self classNamed: #TestSomething }.
+		
+	self logChangesWhile: [ 
+		self compileMethod: 'test02 self assert: false.' in: #TestSomething. 
+		self runTest: #test02fowardNorthGoesNorth class: #TestSomething.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestSomething. ].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasErrorWithDescription: (TDDGuru testRemovedWhileInRed: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething)! !
+!NotDoingTDDTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50853931!
+test13WhenATestIsRemovedIsNoLongerTakenIntoAccount
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestClassA.
+	self compileMethod: 'test02 self assert: false' in: #TestClassA.
+	tddGuru initialState: NotDoingTDD new.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+	
+	self logChangesWhile: [ 
+		self removeMethodWithSelector: #test02fowardNorthGoesNorth from: #TestClassA.
+		self runAllTestsOf: #TestClassA ].
+	
+	tddGuru run.
+	
+	self assertCurrentStateIs: Green ! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50853504!
+test07WhenAModelClassIsAddedIsNotDoingTDD
+	| result |
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self newClassNamed: #ModelClass subclassOf: Object.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1. 
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA).
+	! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50861288!
+test09WhenATestIsRenamedAndAllTestsPassThenIsInGreen
+	| result |
+	self newClassNamed: #ModelClass subclassOf: Object.
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: (ModelClass new m1) equals: 1.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'test02 self assert: (ModelClass new m2) equals: 2.' in: #TestSomething.
+		self runTest: #test02fowardNorthGoesNorth class: #TestSomething.
+		self compileMethod: 'test02A self assert: (ModelClass new m2) equals: 2.' in: #TestSomething.
+		self removeMethodWithSelector: #test02fowardNorthGoesNorth from: #TestSomething.
+		self compileMethod: 'm2 ^ 2' in: #ModelClass.
+		self runAllTestsOf: #TestSomething ].
+
+	result _ tddGuru run.
+	
+	self assertHasNoErrors: result.
+	self assertCurrentStateIs: Green.! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50854641!
+test13WhenAnotherTestIsChangedIsStillInRed
+	| result |
+	
+	self newClassNamed: #TestSomething subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true.' in: #TestSomething.
+	tddGuru initialTestClasses: { self classNamed: #TestSomething }.
+		
+	self logChangesWhile: [ 
+		self compileMethod: 'test02 self assert: false.' in: #TestSomething. 
+		self runTest: #test02fowardNorthGoesNorth class: #TestSomething.
+		self compileMethod: 'test01 self assert: true.' in: #TestSomething. ].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: Red.
+	self assertHasNoErrors: result.! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50853458!
+test05WhenAMethodIsRemovedIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #ModelClass subclassOf: Object.
+	self compileMethod: 'm1 ^ 1' in: #ModelClass.
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self removeMethodWithSelector: #m1 from:  #ModelClass.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1. 
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA).! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50861346!
+test06WhenTheNewTestPassesButAnotherTestFailsThenIsStillInRed
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: (ModelClass new m1) equals: 1.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self newClassNamed: #ModelClass subclassOf: Object. 
+		self compileMethod: 'm1 ^ 1' in: #ModelClass.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'test02 self assert: (ModelClass new m1) equals: 2.' in: #TestSomething.
+		self runTest: #test02fowardNorthGoesNorth class: #TestSomething.
+		self compileMethod: 'm1 ^ 2' in: #ModelClass.
+		self runAllTestsOf: #TestSomething ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Red.! !
+!WritingAFailingTestTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50861086!
+test12WhenADifferentTestIsChangedThenIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestSomethingA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: false' in: #TestSomethingA.
+	self compileMethod: 'test02 self assert: false' in: #TestSomethingA.
+	tddGuru initialState: (WritingAFailingTest currentTest: (UninstalledMethodReference selector: #test02fowardNorthGoesNorth class: #TestSomethingA)).
+	tddGuru initialTestClasses: { self classNamed: #TestSomethingA}.
+	
+	self logChangesWhile: [ 	
+		self compileMethod: 'test01 self assert: true' in: #TestSomethingA.
+	].
+		
+	result _ tddGuru run.
+		
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testChangedWhileThisTestWasBeingWritten: #test01DoingNothingKeepsDirectionAndPosition in: #TestSomethingA)
+	! !
+!RefactorTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50861591!
+test13WhenATestIsRemovedIsNoLongerTakenIntoAccount
+	| result |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestClassA.
+	self compileMethod: 'test02 self assert: true' in: #TestClassA.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+	
+	tddGuru initialState: Refactor new.
+	
+	self logChangesWhile: [ 
+		self removeMethodWithSelector: #test02fowardNorthGoesNorth from: #TestClassA.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Green.! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50861770!
+test04WhenAnotherTestIsRemovedIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: false' in: #TestClassA.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassB subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassB.
+		self compileMethod: 'test02 self assert: false' in: #TestClassB.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from:  #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1. 
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother:  #test02fowardNorthGoesNorth class: #TestClassB).! !
+!GreenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50853302!
+test12WhenATestIsRemovedThenIsRefactoring
+	| result |
+	
+	self newClassNamed: #TestClass subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: false' in: #TestClass.
+	self compileMethod: 'test02 self assert: false' in: #TestClass.
+	tddGuru initialState: Green new.
+	tddGuru initialTestClasses: { self classNamed: #TestClass }.
+	
+	self logChangesWhile: [ self removeMethodWithSelector: #test02fowardNorthGoesNorth from: #TestClass ].
+		
+	result _ tddGuru run.
+		
+	self assertHasNoErrors: result.
+	self assert: tddGuru currentState equals: Refactor.! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50853546!
+test09WhenATestIsAddedIsNotDoingTDD
+	| result |
+	
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self compileMethod: 'test03 self assert: false' in: #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA)! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:31' prior: 50853524!
+test08WhenAModelMethodIsAddedIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #ModelClass subclassOf: Object.
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self compileMethod: 'm1 ^ 1' in: #ModelClass	
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA)
+	! !
+!RedTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:32' prior: 50861685!
+test08WhenATestIsAddedIsNotDoingTDD
+	| result |
+	
+	self logChangesWhile: [ 
+		self newClassNamed: #TestSomething subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false.' in: #TestSomething.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestSomething.
+		self compileMethod: 'test02 self assert: false.' in: #TestSomething. ].
+		
+	result _ tddGuru run.
+		
+	self assert: tddGuru currentState equals: NotDoingTDD.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedErrorMessage: #test02fowardNorthGoesNorth class: #TestSomething).! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:32' prior: 50853371!
+test01WhenAClassIsRemovedIsNotDoingTDD
+	| result |	
+	
+	self newClassNamed: #Something subclassOf: Object.
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self removeClass: #Something.
+	].
+
+	result := tddGuru run.
+	
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA).
+	self assertCurrentStateIs: NotDoingTDD.
+	! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:32' prior: 50861018!
+test03WhenTheFirstOfTheTestsIsRemovedIsBackToWritingAFailingTest
+	| result |
+
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from:  #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertHasNoErrors: result.
+	self assertCurrentStateIs: WritingAFailingTest.
+	self assert: tddGuru currentState currentTest selector equals: #test02fowardNorthGoesNorth
+	! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:32' prior: 50861798!
+test15WhenAllOfTheTestsPassErrorsAreReportedAndGoesToGreen
+	| result |
+	
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: true' in: #TestClassA.
+		self compileMethod: 'test02 self assert: true' in: #TestClassA.
+		self runAllTestsOf: #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: Green.
+	self assert: result hasNErrors: 3.
+	self assert: result hasErrorWithDescription: (TDDGuru testDidNotFail: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA).
+	self assert: result hasErrorWithDescription: (TDDGuru testDidNotFail: #test02fowardNorthGoesNorth class: #TestClassA).
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA)! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:28:32' prior: 50861040!
+test14WhenOneOfTheTestsPassesTwoErrorsAreReported
+	| result |
+	
+	self logChangesWhile: [
+		self newClassNamed: #TestClassA subclassOf: TestCase.
+		self compileMethod: 'test01 self assert: true' in: #TestClassA.
+		self compileMethod: 'test02 self assert: true' in: #TestClassA.
+		self runTest: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: MoreThanOneTestWritten.
+	self assert: result hasNErrors: 2.
+	self assert: result hasErrorWithDescription: (TDDGuru testDidNotFail: #test01DoingNothingKeepsDirectionAndPosition class: #TestClassA).
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test02fowardNorthGoesNorth class: #TestClassA)! !
+
+!methodRemoval: MarsTest #test02 stamp: 'JRC 5/15/2021 16:28:32'!
+test02
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'f'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:29:05'!
+test03backNorthGoesSouth
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'b'.
+	self assert: 3@3 equals: aRover position.
+	self assert: North equals: aRover facing.! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:29:05' prior: 50853604!
+test12WhenAnotherTestIsChangedIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+	self compileMethod: 'test01 self assert: false' in: #TestClassA.
+	
+	self logChangesWhile: [
+		self compileMethod: 'test02 self assert: false' in: #TestClassA.
+		self compileMethod: 'test03 self assert: false' in: #TestClassA.
+		self compileMethod: 'test01 self assert: false' in: #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test03backNorthGoesSouth class: #TestClassA)! !
+!MoreThanOneTestWrittenTest methodsFor: 'as yet unclassified' stamp: 'JRC 5/15/2021 16:29:05' prior: 50861657!
+test17WhenAnotherTestIsRenamedIsNotDoingTDD
+	| result |
+	
+	self newClassNamed: #TestClassA subclassOf: TestCase.
+	self compileMethod: 'test01 self assert: true' in: #TestClassA.
+	tddGuru initialTestClasses: { self classNamed: #TestClassA }.
+	
+	self logChangesWhile: [
+		self compileMethod: 'test02 self assert: true' in: #TestClassA.
+		self compileMethod: 'test03 self assert: true' in: #TestClassA.
+		self compileMethod: 'test01bla self assert: true' in: #TestClassA.
+		self removeMethodWithSelector: #test01DoingNothingKeepsDirectionAndPosition from: #TestClassA.
+	].
+
+	result := tddGuru run.
+	
+	self assertCurrentStateIs: NotDoingTDD.
+	self assert: result hasNErrors: 1.
+	self assert: result hasErrorWithDescription: (TDDGuru testAddedWhileWritingAnother: #test03backNorthGoesSouth class: #TestClassA)! !
+
+!methodRemoval: MarsTest #test03 stamp: 'JRC 5/15/2021 16:29:05'!
+test03
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'b'.
+	self assert: 3@3 equals: aRover position.
+	self assert: North equals: aRover facing.!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:29:39'!
+test04rightOnNorthRotateToEast
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: East equals: aRover facing.! !
+
+!methodRemoval: MarsTest #test04 stamp: 'JRC 5/15/2021 16:29:39'!
+test04
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: East equals: aRover facing.!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:29:44'!
+test04rightOnNorthRotatesToEast
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: East equals: aRover facing.! !
+
+!methodRemoval: MarsTest #test04rightOnNorthRotateToEast stamp: 'JRC 5/15/2021 16:29:44'!
+test04rightOnNorthRotateToEast
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: East equals: aRover facing.!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:30:09'!
+test05leftOnNortRotatesToWest
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: West equals: aRover facing.! !
+
+!methodRemoval: MarsTest #test05 stamp: 'JRC 5/15/2021 16:30:09'!
+test05
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: West equals: aRover facing.!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:30:36'!
+test06leftOnSouthRotatesToEast
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: South.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: East equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test06 stamp: 'JRC 5/15/2021 16:30:36'!
+test06
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: South.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: East equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:30:57'!
+test07leftOnEastRotatesToNorth
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test07 stamp: 'JRC 5/15/2021 16:30:57'!
+test07
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:31:17'!
+test08rightOnEastRotatesToSouth
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test08 stamp: 'JRC 5/15/2021 16:31:17'!
+test08
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: South equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:31:35'!
+test09rightOnWestRotatesToNorth
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: West.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test09 stamp: 'JRC 5/15/2021 16:31:35'!
+test09
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: West.
+	aRover interpretPackage: 'r'.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:31:52'!
+test10leftOnWestRotatesToSouth
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: West.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test10 stamp: 'JRC 5/15/2021 16:31:52'!
+test10
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: West.
+	aRover interpretPackage: 'l'.
+	self assert: 3@4 equals: aRover position.
+	self assert: South equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:33:14'!
+test11
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: South.
+	aRover interpretPackage: 'f'.
+	self assert: 3@3 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test11 stamp: 'JRC 5/15/2021 16:33:17'!
+FAILURE!
+
+!testRun: #MarsTest #test11 stamp: 'JRC 5/15/2021 16:33:17'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:36:20' prior: 50860787!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[
+		direction == North ifTrue: [position := position + (0@1)].
+		direction == South ifTrue: [position := position + (0@-1).].
+		
+		 ].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.	
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		].! !
+
+!testRun: #MarsTest #test11 stamp: 'JRC 5/15/2021 16:36:36'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:36:54'!
+test12
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'f'.
+	self assert: 4@4 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:37:03' prior: 50862817!
+test12
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'f'.
+	self assert: 4@4 equals: aRover position.
+	self assert: East equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test12 stamp: 'JRC 5/15/2021 16:37:12'!
+FAILURE!
+
+!testRun: #MarsTest #test12 stamp: 'JRC 5/15/2021 16:37:12'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:37:39' prior: 50862801!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[
+		direction == North ifTrue: [position := position + (0@1)].
+		direction == South ifTrue: [position := position + (0@-1).].
+		direction == East ifTrue: [position := position + (1@0).].
+		
+		 ].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.	
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		].! !
+
+!testRun: #MarsTest #test12 stamp: 'JRC 5/15/2021 16:37:41'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:37:52'!
+test13
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: West.
+	aRover interpretPackage: 'f'.
+	self assert: 2@4 equals: aRover position.
+	self assert: West equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test13 stamp: 'JRC 5/15/2021 16:37:54'!
+FAILURE!
+
+!testRun: #MarsTest #test13 stamp: 'JRC 5/15/2021 16:37:54'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:38:06' prior: 50862839!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[
+		direction == North ifTrue: [position := position + (0@1)].
+		direction == South ifTrue: [position := position + (0@-1).].
+		direction == East ifTrue: [position := position + (1@0).].
+		direction == East ifTrue: [position := position + (-1@0).].
+		 ].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.	
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		].! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:38:15' prior: 50862870!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[
+		direction == North ifTrue: [position := position + (0@1)].
+		direction == South ifTrue: [position := position + (0@-1).].
+		direction == East ifTrue: [position := position + (1@0).].
+		direction == West ifTrue: [position := position + (-1@0).].
+		 ].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.	
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		].! !
+
+!testRun: #MarsTest #test13 stamp: 'JRC 5/15/2021 16:38:16'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test11 stamp: 'JRC 5/15/2021 16:38:54'!
+PASSED!
+
+!testRun: #MarsTest #test12 stamp: 'JRC 5/15/2021 16:38:55'!
+PASSED!
+
+!testRun: #MarsTest #test13 stamp: 'JRC 5/15/2021 16:38:55'!
+PASSED!
+!East class methodsFor: 'rotation' stamp: 'JRC 5/15/2021 16:40:37'!
+vector
+	^0@1! !
+!East class methodsFor: 'rotation' stamp: 'JRC 5/15/2021 16:40:50' prior: 50862945!
+vector
+	^1@0! !
+!North class methodsFor: 'vector' stamp: 'JRC 5/15/2021 16:41:12'!
+vector
+	^0@1! !
+!South class methodsFor: 'vector' stamp: 'JRC 5/15/2021 16:41:23'!
+vector
+	^0@-1! !
+!West class methodsFor: 'vector' stamp: 'JRC 5/15/2021 16:41:33'!
+vector
+	^-1@0! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:42:10' prior: 50862889!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[
+		position:= position + direction vector.
+		 ].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.	
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		].! !
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test11 stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test12 stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+
+!testRun: #MarsTest #test13 stamp: 'JRC 5/15/2021 16:42:14'!
+PASSED!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:42:26' prior: 50862962!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[
+		position := position + direction vector.
+		 ].
+	(aString = 'b') ifTrue:[ position := position - (0@1).].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.	
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		].! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:42:44' prior: 50863010!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[
+		position := position + direction vector.
+		 ].
+	(aString = 'b') ifTrue:[ 
+		position := position - direction vector.].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.	
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		].! !
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test11 stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test12 stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+
+!testRun: #MarsTest #test13 stamp: 'JRC 5/15/2021 16:42:56'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:44:16'!
+test14
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'ff'.
+	self assert: 2@4 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:44:28' prior: 50863070!
+test14
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'ff'.
+	self assert: 3@6 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test14 stamp: 'JRC 5/15/2021 16:44:30'!
+FAILURE!
+
+!testRun: #MarsTest #test14 stamp: 'JRC 5/15/2021 16:44:30'!
+FAILURE!
+
+'ff'!
+
+'ff'!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:47:59' prior: 50863022!
+interpretPackage: aString 
+	(aString = 'f') ifTrue:[
+		position := position + direction vector.
+		 ].
+	(aString = 'b') ifTrue:[ 
+		position := position - direction vector.].
+	(aString = 'l') ifTrue:[ 
+		direction := direction left.	
+		].
+	(aString = 'r') ifTrue:[ 
+		direction := direction right.
+		].
+		(aString = 'ff') ifTrue:[
+		position := position + direction vector.
+		position := position + direction vector.
+		 ].
+	! !
+
+!testRun: #MarsTest #test14 stamp: 'JRC 5/15/2021 16:48:04'!
+PASSED!
+
+!testRun: #MarsTest #test14 stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test11 stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test12 stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test13 stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+
+!testRun: #MarsTest #test14 stamp: 'JRC 5/15/2021 16:48:07'!
+PASSED!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:49:55' prior: 50863093!
+interpretPackage: aString 
+aString do: [:aCharacter | 
+	(aCharacter = $f) ifTrue:[
+		position := position + direction vector.
+		 ].
+	(aCharacter = $b) ifTrue:[ 
+		position := position - direction vector.].
+	(aCharacter = $l) ifTrue:[ 
+		direction := direction left.	
+		].
+	(aCharacter = $r) ifTrue:[ 
+		direction := direction right.
+		].
+	].
+! !
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 16:49:59'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 16:49:59'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 16:49:59'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 16:49:59'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 16:49:59'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 16:49:59'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 16:49:59'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 16:49:59'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 16:49:59'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 16:50:00'!
+PASSED!
+
+!testRun: #MarsTest #test11 stamp: 'JRC 5/15/2021 16:50:00'!
+PASSED!
+
+!testRun: #MarsTest #test12 stamp: 'JRC 5/15/2021 16:50:00'!
+PASSED!
+
+!testRun: #MarsTest #test13 stamp: 'JRC 5/15/2021 16:50:00'!
+PASSED!
+
+!testRun: #MarsTest #test14 stamp: 'JRC 5/15/2021 16:50:00'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:50:35'!
+test11fowardOnSouthGoesDown
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: South.
+	aRover interpretPackage: 'f'.
+	self assert: 3@3 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test11 stamp: 'JRC 5/15/2021 16:50:44'!
+test11
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: South.
+	aRover interpretPackage: 'f'.
+	self assert: 3@3 equals: aRover position.
+	self assert: South equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:51:14'!
+test12fowardOnEastGoRight
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'f'.
+	self assert: 4@4 equals: aRover position.
+	self assert: East equals: aRover facing.
+	! !
+!WarpBlt class methodsFor: 'examples' stamp: 'JRC 5/15/2021 16:51:14'!
+test12fowardOnEastGoRight
+	"
+	Display restoreAfter: [WarpBlt test12]
+	"
+	"Just like test1, but comparing smooth to non-smooth warps"
+	| warp pts r1 p0 p ext warp2 box |
+	Utilities informUser: 'Choose a rectangle with interesting stuff'
+		during: [r1 _ Rectangle originFromUser: 50@50.
+				Sensor waitNoButton].
+	Utilities informUser: 'Now click down and up
+and move the mouse around the dot'
+		during: [p0 _ Sensor waitClickButton.
+				(Form dotOfSize: 8) displayAt: p0].
+	warp _ (self toForm: Display)
+		cellSize: 2;  "installs a colormap"
+		clipRect: (0@0 extent: r1 extent*5);
+		sourceForm: Display;
+		combinationRule: Form over.
+	warp2 _ (self toForm: Display)
+		clipRect: ((0@0 extent: r1 extent*5) translatedBy: 250@0);
+		sourceForm: Display;
+		combinationRule: Form over.
+	[Sensor isAnyButtonPressed] whileFalse:
+		[p _ Sensor mousePoint.
+		pts _ {r1 topLeft. r1 bottomLeft. r1 bottomRight. r1 topRight}
+			collect: [:pt | pt inverseRotatedBy: (p-p0) theta about: r1 center].
+		ext _ (r1 extent*((p-p0) r / 20.0 max: 0.1)) asIntegerPoint.
+		box _ (r1 extent*5-ext//2 extent: ext).
+		warp copyQuad: pts toRect: box.
+		DisplayScreen screenUpdateRequired: box.
+		box _ ((r1 extent*5-ext//2 extent: ext) translatedBy: 250@0).
+		warp2 copyQuad: pts toRect: box.
+		DisplayScreen screenUpdateRequired: box.
+		]! !
+
+!methodRemoval: MarsTest #test12 stamp: 'JRC 5/15/2021 16:51:14'!
+test12
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: East.
+	aRover interpretPackage: 'f'.
+	self assert: 4@4 equals: aRover position.
+	self assert: East equals: aRover facing.
+	!
+
+!methodRemoval: WarpBlt class #test12 stamp: 'JRC 5/15/2021 16:51:14'!
+test12
+	"
+	Display restoreAfter: [WarpBlt test12]
+	"
+	"Just like test1, but comparing smooth to non-smooth warps"
+	| warp pts r1 p0 p ext warp2 box |
+	Utilities informUser: 'Choose a rectangle with interesting stuff'
+		during: [r1 _ Rectangle originFromUser: 50@50.
+				Sensor waitNoButton].
+	Utilities informUser: 'Now click down and up
+and move the mouse around the dot'
+		during: [p0 _ Sensor waitClickButton.
+				(Form dotOfSize: 8) displayAt: p0].
+	warp _ (self toForm: Display)
+		cellSize: 2;  "installs a colormap"
+		clipRect: (0@0 extent: r1 extent*5);
+		sourceForm: Display;
+		combinationRule: Form over.
+	warp2 _ (self toForm: Display)
+		clipRect: ((0@0 extent: r1 extent*5) translatedBy: 250@0);
+		sourceForm: Display;
+		combinationRule: Form over.
+	[Sensor isAnyButtonPressed] whileFalse:
+		[p _ Sensor mousePoint.
+		pts _ {r1 topLeft. r1 bottomLeft. r1 bottomRight. r1 topRight}
+			collect: [:pt | pt inverseRotatedBy: (p-p0) theta about: r1 center].
+		ext _ (r1 extent*((p-p0) r / 20.0 max: 0.1)) asIntegerPoint.
+		box _ (r1 extent*5-ext//2 extent: ext).
+		warp copyQuad: pts toRect: box.
+		DisplayScreen screenUpdateRequired: box.
+		box _ ((r1 extent*5-ext//2 extent: ext) translatedBy: 250@0).
+		warp2 copyQuad: pts toRect: box.
+		DisplayScreen screenUpdateRequired: box.
+		]!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:51:37'!
+test13fowardOnWestGoLeft
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: West.
+	aRover interpretPackage: 'f'.
+	self assert: 2@4 equals: aRover position.
+	self assert: West equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test13 stamp: 'JRC 5/15/2021 16:51:37'!
+test13
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: West.
+	aRover interpretPackage: 'f'.
+	self assert: 2@4 equals: aRover position.
+	self assert: West equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:51:57'!
+test14fowardOnNorthGoesUp
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'ff'.
+	self assert: 3@6 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test14 stamp: 'JRC 5/15/2021 16:51:57'!
+test14
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'ff'.
+	self assert: 3@6 equals: aRover position.
+	self assert: North equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:52:31'!
+test15
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'ffbb'.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:52:33'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:52:43' prior: 50863358!
+test15
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'bbbb'.
+	self assert: 3@0 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:52:47'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:52:52' prior: 50863369!
+test15
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'bbbbb'.
+	self assert: 3@-0 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:52:54' prior: 50863380!
+test15
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'bbbbb'.
+	self assert: 3@-1 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:52:57'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:53:02' prior: 50863389!
+test15
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'bbbb'.
+	self assert: 3@-0 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:53:04'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:54:42' prior: 50863400!
+test15
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'x'.
+	"self assert:" 
+	
+	! !
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:55:04'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:55:27' prior: 50863411!
+test15
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'x'.
+	self assert: 3@4 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:55:32'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 16:55:43' prior: 50863420!
+test15
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fxf'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:55:52'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:56:30' prior: 50863152!
+interpretPackage: aString 
+aString do: [:aCharacter | 
+	(aCharacter = $f) ifTrue:[
+		position := position + direction vector.
+		 ].
+	(aCharacter = $b) ifTrue:[ 
+		position := position - direction vector.].
+	(aCharacter = $l) ifTrue:[ 
+		direction := direction left.	
+		].
+	(aCharacter = $r) ifTrue:[ 
+		direction := direction right.
+		].
+	^self.
+	].
+! !
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 16:57:07'!
+FAILURE!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:57:07'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 16:57:07'!
+FAILURE!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:57:19'!
+PASSED!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:57:24'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 16:57:36'!
+FAILURE!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:57:36'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 16:57:36'!
+FAILURE!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:57:47'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 16:57:56'!
+FAILURE!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 16:57:56'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 16:59:40' prior: 50863442!
+interpretPackage: aString 
+aString do: [:aCharacter | 
+	(aCharacter = $f) ifTrue:[
+		position := position + direction vector.
+		^self.
+		 ].
+	(aCharacter = $b) ifTrue:[ 
+		position := position - direction vector.
+		^self.
+		].
+	(aCharacter = $l) ifTrue:[ 
+		direction := direction left.	
+		^self.
+		].
+	(aCharacter = $r) ifTrue:[ 
+		direction := direction right.
+		^self.
+		].
+	].
+! !
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 16:59:43'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 16:59:43'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 16:59:43'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 16:59:43'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 16:59:43'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 16:59:43'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 16:59:44'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 16:59:44'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 16:59:44'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 16:59:44'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 16:59:44'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 16:59:44'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 16:59:44'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 16:59:44'!
+FAILURE!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 16:59:44'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 16:59:44'!
+FAILURE!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 17:00:12' prior: 50863562!
+interpretPackage: aString 
+aString do: [:aCharacter | 
+	(aCharacter = $f) ifTrue:[
+		position := position + direction vector.
+		 ].
+	(aCharacter = $b) ifTrue:[ 
+		position := position - direction vector.
+		].
+	(aCharacter = $l) ifTrue:[ 
+		direction := direction left.	
+		].
+	(aCharacter = $r) ifTrue:[ 
+		direction := direction right.
+		].
+	].
+! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 17:05:31' prior: 50863623!
+interpretPackage: aString 
+aString do: [:aCharacter | 
+	( #($f $b $r $l) includes: aCharacter ) ifFalse: [^self.].
+	(aCharacter = $f) ifTrue:[
+		position := position + direction vector.
+		 ].
+	(aCharacter = $b) ifTrue:[ 
+		position := position - direction vector.
+		].
+	(aCharacter = $l) ifTrue:[ 
+		direction := direction left.	
+		].
+	(aCharacter = $r) ifTrue:[ 
+		direction := direction right.
+		].
+	].
+! !
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 17:05:51'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:06:06'!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fxff'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:06:07'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:06:08'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:06:14' prior: 50863695!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fxffl'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:06:20' prior: 50863751!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fxffl'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:06:21'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:06:26' prior: 50863760!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'flxffl'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:06:26'!
+FAILURE!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:06:34' prior: 50863816!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'flxffl'.
+	self assert: 3@5 equals: aRover position.
+	self assert: West equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:06:35'!
+PASSED!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 17:06:36'!
+PASSED!
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:06:36'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:06:45' prior: 50863827!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fllxffl'.
+	self assert: 3@5 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 17:06:46'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 17:06:47'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 17:06:47'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 17:06:47'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:06:47'!
+PASSED!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 17:06:47'!
+PASSED!
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:06:47'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:07:28' prior: 50863883!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fllfbbbffxffl'.
+	self assert: 3@5 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:07:30'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:07:39' prior: 50863940!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fllfbbbfflrlrrlrlxffl'.
+	self assert: 3@5 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:07:39'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:07:40'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:07:49' prior: 50863997!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fllfbbbfflrlrrlrlrrrrllllxffl'.
+	self assert: 3@5 equals: aRover position.
+	self assert: South equals: aRover facing.
+	! !
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:07:50'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 17:07:50'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 17:07:50'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 17:07:50'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 17:07:50'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 17:07:50'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test15 stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!testRun: #MarsTest #test16 stamp: 'JRC 5/15/2021 17:07:51'!
+PASSED!
+
+!methodRemoval: MarsTest #test16 stamp: 'JRC 5/15/2021 17:08:16'!
+test16
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fllfbbbfflrlrrlrlrrrrllllxffl'.
+	self assert: 3@5 equals: aRover position.
+	self assert: South equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:08:59'!
+test15ShouldStopAfterErrorInPackage
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fxf'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test15 stamp: 'JRC 5/15/2021 17:09:03'!
+test15
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'fxf'.
+	self assert: 3@5 equals: aRover position.
+	self assert: North equals: aRover facing.
+	!
+
+!testRun: #MarsTest #test15ShouldStopAfterErrorInPackage stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test01DoingNothingKeepsDirectionAndPosition stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test02fowardNorthGoesNorth stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test03backNorthGoesSouth stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test04rightOnNorthRotatesToEast stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test05leftOnNortRotatesToWest stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test06leftOnSouthRotatesToEast stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test07leftOnEastRotatesToNorth stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test08rightOnEastRotatesToSouth stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test09rightOnWestRotatesToNorth stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test10leftOnWestRotatesToSouth stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test11fowardOnSouthGoesDown stamp: 'JRC 5/15/2021 17:09:05'!
+PASSED!
+
+!testRun: #MarsTest #test12fowardOnEastGoRight stamp: 'JRC 5/15/2021 17:09:06'!
+PASSED!
+
+!testRun: #MarsTest #test13fowardOnWestGoLeft stamp: 'JRC 5/15/2021 17:09:06'!
+PASSED!
+
+!testRun: #MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:09:06'!
+PASSED!
+
+!testRun: #MarsTest #test15ShouldStopAfterErrorInPackage stamp: 'JRC 5/15/2021 17:09:06'!
+PASSED!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:09:22'!
+test14fowardfowardOnNorthGoesUpx2
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'ff'.
+	self assert: 3@6 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test14fowardOnNorthGoesUp stamp: 'JRC 5/15/2021 17:09:28'!
+test14fowardOnNorthGoesUp
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'ff'.
+	self assert: 3@6 equals: aRover position.
+	self assert: North equals: aRover facing.
+	!
+!MarsTest methodsFor: 'testing' stamp: 'JRC 5/15/2021 17:09:45'!
+test14fowardfowardOnNorthGoesUpTwice
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'ff'.
+	self assert: 3@6 equals: aRover position.
+	self assert: North equals: aRover facing.
+	! !
+
+!methodRemoval: MarsTest #test14fowardfowardOnNorthGoesUpx2 stamp: 'JRC 5/15/2021 17:09:49'!
+test14fowardfowardOnNorthGoesUpx2
+ 	|aRover|
+	aRover := MarsRover startingAt: (3@4) facing: North.
+	aRover interpretPackage: 'ff'.
+	self assert: 3@6 equals: aRover position.
+	self assert: North equals: aRover facing.
+	!
+
+!testRun: #MarsTest #test14fowardfowardOnNorthGoesUpTwice stamp: 'JRC 5/15/2021 17:09:52'!
+PASSED!
+
+----SNAPSHOT----(15 May 2021 17:10:01) CuisUniversity-4532.image priorSource: 16917375!
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 17:12:33' prior: 50863637!
+interpretPackage: aString 
+aString do: [:aCharacter | 
+	( #($f $b $r $l) includes: aCharacter ) ifFalse: [^self.].
+	(aCharacter = $f) ifTrue:[
+		position := position + direction vector.
+		 ].
+	(aCharacter = $b) ifTrue:[ 
+		position := position - direction vector.
+		].
+	(aCharacter = $l) ifTrue:[ 
+		direction := direction left.	
+		].
+	(aCharacter = $r) ifTrue:[ 
+		direction := direction right.
+		].
+	]. "no podemos sacar los IF ya que String no depende de nuestro dominio de problema"
+! !
+!MarsRover methodsFor: 'actions' stamp: 'JRC 5/15/2021 17:12:42' prior: 50864230!
+interpretPackage: aString 
+aString do: [:aCharacter | 
+	( #($f $b $r $l) includes: aCharacter ) ifFalse: [^self.].
+	(aCharacter = $f) ifTrue:[
+		position := position + direction vector.
+		 ].
+	(aCharacter = $b) ifTrue:[ 
+		position := position - direction vector.
+		].
+	(aCharacter = $l) ifTrue:[ 
+		direction := direction left.	
+		].
+	(aCharacter = $r) ifTrue:[ 
+		direction := direction right.
+		].
+	].
+! !
+!MarsDirection class methodsFor: 'vector' stamp: 'JRC 5/15/2021 17:15:39'!
+vector
+	self subclassResponsibility ! !
+!MarsDirection class methodsFor: 'vector' stamp: 'JRC 5/15/2021 17:15:43'!
+left
+	self subclassResponsibility ! !
+!MarsDirection class methodsFor: 'vector' stamp: 'JRC 5/15/2021 17:15:46'!
+right
+	self subclassResponsibility ! !
+
+----SNAPSHOT----(15 May 2021 17:18:19) CuisUniversity-4532.image priorSource: 17042430!
+
+----QUIT----(15 May 2021 17:23:27) CuisUniversity-4532.image priorSource: 17044006!

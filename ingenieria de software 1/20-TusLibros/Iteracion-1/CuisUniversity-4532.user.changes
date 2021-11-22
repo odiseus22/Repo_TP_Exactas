@@ -1,0 +1,2524 @@
+
+
+----QUIT----(9 March 2021 14:58:42) CuisUniversity-4532.image priorSource: 13044060!
+
+----STARTUP---- (9 March 2021 14:58:43) as /Users/hernan/Documents/Cuis/5.0-64Bits/Cuis-University-Installer/CuisUniversity-4532.image!
+
+
+----QUIT----(9 March 2021 14:58:43) CuisUniversity-4532.image priorSource: 16885479!
+
+----STARTUP---- (7 June 2021 20:20:50) as /media/Datos/Cuis/Ej-Libros/linux64/CuisUniversity-4532.image!
+
+
+----End fileIn of /media/Datos/Cuis/Ej-Libros/linux64/TDDStateIcon-setBalloonText.st----!
+
+Object subclass: #XXX
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+
+!classDefinition: #XXX category: 'Ejercicio-Libros' stamp: 'G.L.S 6/7/2021 20:31:04'!
+Object subclass: #XXX
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+
+TestCase subclass: #TestXXX
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+
+!classDefinition: #TestXXX category: 'Ejercicio-Libros' stamp: 'G.L.S 6/7/2021 20:31:20'!
+TestCase subclass: #TestXXX
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+
+!classRenamed: #TestXXX as: #XXXTest stamp: 'G.L.S 6/7/2021 20:31:35'!
+Smalltalk renameClassNamed: #TestXXX as: #XXXTest!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/7/2021 20:31:50'!
+test01! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/7/2021 20:38:42' prior: 50859369!
+test01
+
+	| badRequest result sistema |
+	sistema := XXX start.
+	
+	result := sistema request: ''.
+	
+	badRequest := 0.
+	
+	self assert: result equals: badRequest
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/7/2021 20:40:10' prior: 50859372!
+test01
+
+	| badRequest result sistema |
+	
+	sistema := XXX start.
+	
+	result := sistema request: ''.
+	
+	badRequest := 400.
+	
+	self assert: result equals: badRequest
+	! !
+
+----QUIT----(7 June 2021 22:51:48) CuisUniversity-4532.image priorSource: 16885703!
+
+----STARTUP---- (9 June 2021 17:05:28) as /media/Datos/Cuis/Ej-Libros/linux64/CuisUniversity-4532.image!
+
+
+!classDefinition: #Carrito category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 17:14:22'!
+Object subclass: #Carrito
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:14:28' prior: 50859380!
+test01
+
+	| carrito aPassword idCliente |
+	
+	idCliente := 0.
+	aPassword := '1234'.
+	
+	carrito := Carrito forClient: idCliente withPassword: aPassword.
+	
+	self assert: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:25:44' prior: 50859401!
+test01
+
+	| carrito |
+	
+	carrito := Carrito createNew.
+	
+	self assert: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:33:25' prior: 50859410!
+test01
+
+	| carrito |
+	
+	carrito := Carrito createNew.
+	
+	self assert: carrito isEmpty.
+	! !
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:33:28'!
+ERROR!
+!Carrito class methodsFor: 'instance creation' stamp: 'G.L.S 6/9/2021 17:33:35'!
+createNew
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeCreateNew! !
+!Carrito class methodsFor: 'instance creation' stamp: 'G.L.S 6/9/2021 17:33:44' prior: 50859424!
+createNew
+	^self new initialize.! !
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:33:45'!
+ERROR!
+!Carrito methodsFor: 'no messages' stamp: 'G.L.S 6/9/2021 17:33:55' overrides: 16896425!
+initialize! !
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:34:10'!
+ERROR!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:36:05'!
+ERROR!
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/9/2021 17:36:17'!
+isEmpty
+	self shouldBeImplemented.! !
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/9/2021 17:36:29' prior: 50859446!
+isEmpty
+	^true.! !
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:36:30'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:36:30'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:36:33'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:36:33'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:37:04'!
+test02
+
+	| carrito |
+	
+	carrito := Carrito createNew.
+	
+	carrito add: 'libro'.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:38:35' prior: 50859462!
+test02
+
+	| carrito |
+	
+	carrito := Carrito createNew.
+	
+	carrito add: '978-3-16-148410-0'.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:39:18' prior: 50859469!
+test02
+
+	| carrito unLibro |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '978-3-16-148410-0'.
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:39:21' prior: 50859476!
+test02
+
+	| carrito unLibro |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '978-3-16-148410-0'.
+	
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:42:53' prior: 50859484!
+test02
+
+	| carrito unLibro |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 17:44:43'!
+ERROR!
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 17:44:57'!
+add: aString 
+	self shouldBeImplemented.! !
+
+!classDefinition: #Carrito category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 17:45:23'!
+Object subclass: #Carrito
+	instanceVariableNames: 'libro'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 17:45:21' prior: 50859502!
+add: aString 
+	libro := aString.! !
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 17:45:29'!
+FAILURE!
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/9/2021 17:45:52' prior: 50859450!
+isEmpty
+	^libro isNil.! !
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:45:59'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 17:45:59'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 17:45:59'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:48:24'!
+test03
+
+	| carrito unLibro |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	
+	carrito add: unLibro.
+	carrito add: unLibro.
+	carrito add: unLibro.
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	self assert: 4 equals: carrito size.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:50:24' prior: 50859492!
+test02
+
+	| carrito unLibro |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	
+	carrito add: unLibro amount: 1.
+	
+	self deny: carrito isEmpty.
+	! !
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 17:50:28'!
+ERROR!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:51:06' prior: 50859541!
+test02
+
+	| carrito unLibro |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 17:56:53' prior: 50859530!
+test03
+
+	| carrito unLibro |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	
+	carrito add: unLibro amount: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 4 equals: carrito listItems size.! !
+
+----End fileIn of /media/Datos/Cuis/Ej-Libros/linux64/Packages/TerseGuide.pck.st----!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:07:10' prior: 50859559!
+test03
+
+	| carrito unLibro tuplaLibroCant |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	carrito add: unLibro amount: 4.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 1 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.! !
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:07:27'!
+ERROR!
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:07:37'!
+add: aString amount: aSmallInteger 
+	self shouldBeImplemented.! !
+
+!classDefinition: #Carrito category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:08:50'!
+Object subclass: #Carrito
+	instanceVariableNames: 'libro libros'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:09:00' prior: 50862511!
+add: aString amount: aSmallInteger 
+	| tuplaLibroCant |
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: aString.
+	tuplaLibroCant add: aSmallInteger.
+	
+	libros add: tuplaLibroCant.! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:09:08' prior: 50862524!
+add: aString amount: aSmallInteger 
+	| tuplaLibroCant |
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: aString.
+	tuplaLibroCant add: aSmallInteger.
+	
+	libros add: tuplaLibroCant.! !
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:09:39'!
+ERROR!
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:10:04' prior: 50859439 overrides: 16896425!
+initialize
+	libros := OrderedCollection new.! !
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:10:06'!
+FAILURE!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:10:06'!
+FAILURE!
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/9/2021 18:10:27' prior: 50859520!
+isEmpty
+	^libros isEmpty .! !
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/9/2021 18:10:28' prior: 50862555!
+isEmpty
+	^libros isEmpty.! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:10:46' prior: 50859514!
+add: aString 
+	self add: aString amount: 1.! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:10:55' prior: 50862563!
+add: aLibro 
+	self add: aLibro amount: 1.! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:11:05' prior: 50862534!
+add: aLibro amount: aSmallInteger 
+	| tuplaLibroCant |
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: aLibro.
+	tuplaLibroCant add: aSmallInteger.
+	
+	libros add: tuplaLibroCant.! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:11:14' prior: 50862573!
+add: aLibro amount: anAmount 
+	| tuplaLibroCant |
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: aLibro.
+	tuplaLibroCant add: anAmount.
+	
+	libros add: tuplaLibroCant.! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:11:20' prior: 50862583!
+add: aBook amount: anAmount 
+	| tuplaLibroCant |
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: aBook.
+	tuplaLibroCant add: anAmount.
+	
+	libros add: tuplaLibroCant.! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:11:29' prior: 50862568!
+add: aBook 
+	self add: aBook amount: 1.! !
+
+!classDefinition: #Carrito category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:11:38'!
+Object subclass: #Carrito
+	instanceVariableNames: 'libro books'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:11:38' prior: 50862592!
+add: aBook amount: anAmount 
+	| tuplaLibroCant |
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: aBook.
+	tuplaLibroCant add: anAmount.
+	
+	books add: tuplaLibroCant.! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:11:38' prior: 50862559!
+isEmpty
+	^books isEmpty.! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:11:38' prior: 50862546 overrides: 16896425!
+initialize
+	books := OrderedCollection new.! !
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:11:50'!
+ERROR!
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:12:05'!
+listItems
+	^books! !
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:12:06' prior: 50862634!
+listItems
+	^books.! !
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:12:11'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:12:11'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:12:11'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:12:11'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:13:51'!
+test04
+
+	| carrito unLibro tuplaLibroCant unLibro2 unLibro3 |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	unLibro2 := ''.
+	unLibro3 := ''.
+	
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 10.
+	carrito add: unLibro3 amount: 100.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 1 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:14:05' prior: 50862650!
+test04
+
+	| carrito unLibro tuplaLibroCant unLibro2 unLibro3 |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	unLibro2 := ''.
+	unLibro3 := ''.
+	
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 10.
+	carrito add: unLibro3 amount: 100.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 3 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:15:14' prior: 50862669!
+test04
+
+	| carrito unLibro tuplaLibroCant unLibro2 unLibro3 |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	unLibro2 := ''.
+	unLibro3 := ''.
+	
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 10.
+	carrito add: unLibro3 amount: 100.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 3 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro2.
+	tuplaLibroCant add: 10.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro3.
+	tuplaLibroCant add: 100.
+	
+	self assert: tuplaLibroCant equals: carrito listItems third.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:15:36' prior: 50862688!
+test04
+
+	| carrito unLibro tuplaLibroCant unLibro2 unLibro3 |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	unLibro2 := '9780201184624'.
+	unLibro3 := ''.
+	
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 10.
+	carrito add: unLibro3 amount: 100.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 3 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro2.
+	tuplaLibroCant add: 10.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro3.
+	tuplaLibroCant add: 100.
+	
+	self assert: tuplaLibroCant equals: carrito listItems third.! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:16:39'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:16:39'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:16:39'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:16:39'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:16:39'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:16:57' prior: 50862494!
+test03
+
+	| carrito unLibro tuplaLibroCant |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201184624'.
+	carrito add: unLibro amount: 4.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 1 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.! !
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:16:58'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:16:58'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:16:58'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:16:58'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:16:58'!
+PASSED!
+
+!methodRemoval: XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:17:02'!
+test04
+
+	| carrito unLibro tuplaLibroCant unLibro2 unLibro3 |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	unLibro2 := '9780201184624'.
+	unLibro3 := ''.
+	
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 10.
+	carrito add: unLibro3 amount: 100.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 3 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro2.
+	tuplaLibroCant add: 10.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro3.
+	tuplaLibroCant add: 100.
+	
+	self assert: tuplaLibroCant equals: carrito listItems third.!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:19:00' prior: 50862758!
+test03
+
+	| carrito unLibro tuplaLibroCant unLibro2 |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201184624'.
+	unLibro2 := '9780201113723'.
+	
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 1 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:19:34' prior: 50862813!
+test03
+
+	| carrito unLibro tuplaLibroCant unLibro2 |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201184624'.
+	unLibro2 := '9780201113723'.
+	
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 2 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro2.
+	tuplaLibroCant add: 2.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.! !
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:19:35'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:19:35'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:19:35'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:19:35'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:23:18'!
+test04
+
+	| carrito unLibro |
+	
+	carrito := Carrito createNew.
+	
+	unLibro := '9780201113723'.
+	
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:24:47' prior: 50862861!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	
+	
+	carrito := Carrito createNewWithValidList: 12.
+	
+	unLibro := '9780201113723'.
+	
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:25:15' prior: 50862869!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: ''.
+	
+	carrito := Carrito createNewWithValidList: librosValidos.
+	
+	unLibro := '9780201113723'.
+	
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:25:39' prior: 50862879!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithValidList: librosValidos.
+	
+	unLibro := '9780201113723'.
+	
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:26:14' prior: 50862890!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithValidList: librosValidos.
+	
+	unLibro := '9780201113723'.
+	carrito add: unLibro.
+	
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:26:15' prior: 50862902!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithValidList: librosValidos.
+	
+	unLibro := '9780201113723'.
+	carrito add: unLibro.
+	
+	
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:27:00' prior: 50862913!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithValidList: librosValidos.
+	
+	unLibro := '9780201113723'.
+	carrito add: unLibro.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:31:12' prior: 50862924!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		unLibro := ''.
+		carrito add: unLibro.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			anError message = Carrito errorBookNotInAllowedList
+			] 
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:31:26' prior: 50862935!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		unLibro := '9780201113723'.
+		carrito add: unLibro.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			anError message = Carrito errorBookNotInAllowedList
+			] 
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:31:30' prior: 50862949!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		unLibro := '9780201113723'.
+		carrito add: unLibro.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			anError message = Carrito errorBookNotInAllowedList
+			].
+	! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:31:35'!
+ERROR!
+!Carrito class methodsFor: 'instance creation' stamp: 'G.L.S 6/9/2021 18:31:42'!
+createNewWithAllowedList: anOrderedCollection 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeCreateNewWithAllowedList: anOrderedCollection ! !
+!Carrito class methodsFor: 'instance creation' stamp: 'G.L.S 6/9/2021 18:31:57' prior: 50862981!
+createNewWithAllowedList: anOrderedCollection 
+	^self new initializeWith: anOrderedCollection ! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:32:00'!
+ERROR!
+
+!classDefinition: #Carrito category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:32:10'!
+Object subclass: #Carrito
+	instanceVariableNames: 'libro books orderedCollection'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!Carrito methodsFor: 'initialization' stamp: 'G.L.S 6/9/2021 18:32:10'!
+initializeWith: anOrderedCollection 
+	self shouldBeImplemented.
+	orderedCollection := anOrderedCollection.! !
+!Carrito methodsFor: 'initialization' stamp: 'G.L.S 6/9/2021 18:32:19' prior: 50863007!
+initializeWith: anOrderedCollection
+	orderedCollection := anOrderedCollection.! !
+
+!classDefinition: #Carrito category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:32:26'!
+Object subclass: #Carrito
+	instanceVariableNames: 'libro books allowedBooks'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!Carrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:32:26' prior: 50863014!
+initializeWith: anOrderedCollection
+	allowedBooks := anOrderedCollection.! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:32:30'!
+FAILURE!
+!Carrito class methodsFor: 'instance creation' stamp: 'G.L.S 6/9/2021 18:32:52' prior: 50862991!
+createNewWithAllowedList: anOrderedCollection 
+	^self new initializeWith: anOrderedCollection.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:33:12' prior: 50862964!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		unLibro := '9780201113723'.
+		carrito add: unLibro.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			anError message = Carrito errorBookNotInAllowedList.
+			].
+	! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:33:14'!
+FAILURE!
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/9/2021 18:33:57' prior: 50862613!
+add: aBook amount: anAmount 
+	| tuplaLibroCant |
+	
+	self assertBookIsAllowed: aBook.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: aBook.
+	tuplaLibroCant add: anAmount.
+	
+	books add: tuplaLibroCant.! !
+!Carrito methodsFor: 'initialization' stamp: 'G.L.S 6/9/2021 18:34:17' prior: 50863028!
+initializeWith: anOrderedCollection
+	allowedBooks := anOrderedCollection.
+	books := OrderedCollection new.! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:34:33'!
+ERROR!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:34:33'!
+ERROR!
+!Carrito class methodsFor: 'errors' stamp: 'G.L.S 6/9/2021 18:34:46'!
+errorBookNotInAllowedList
+	self shouldBeImplemented.! !
+!Carrito class methodsFor: 'errors' stamp: 'G.L.S 6/9/2021 18:35:13' prior: 50863079!
+errorBookNotInAllowedList
+	^'Error - El Libro no está en la lista de productos permitidos'.! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:35:14'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:35:19'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:35:57'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:35:57'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:35:57'!
+ERROR!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:35:57'!
+ERROR!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:35:57'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:36:03'!
+ERROR!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:37:03'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:37:07' prior: 50863042!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		unLibro := '9780201113723'.
+		carrito add: unLibro.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			anError message == Carrito errorBookNotInAllowedList.
+			].
+	! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:37:10'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:37:20'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:37:25' prior: 50863110!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		unLibro := '9780201113723'.
+		carrito add: unLibro.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			anError message = Carrito errorBookNotInAllowedList.
+			].
+	! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:38:59'!
+PASSED!
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/9/2021 18:40:39'!
+assertBookIsAllowed: aBook
+
+	(allowedBooks includes: aBook) ifFalse:[self error: self class errorBookNotInAllowedList.].! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:40:44'!
+ERROR!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:40:44'!
+ERROR!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:41:19' prior: 50863129!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		unLibro := '9780201113723'.
+		carrito add: unLibro.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Carrito errorBookNotInAllowedList.
+			].
+	! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:41:20'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:41:20'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:41:20'!
+ERROR!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:41:20'!
+ERROR!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:41:20'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:41:25'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:41:42' prior: 50862830!
+test03
+
+	| carrito unLibro tuplaLibroCant unLibro2 librosValidos |
+	
+	carrito := Carrito createNew.
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	
+	unLibro := '9780201184624'.
+	unLibro2 := '9780201113723'.
+	
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 2 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro2.
+	tuplaLibroCant add: 2.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:41:54' prior: 50863186!
+test03
+
+	| carrito unLibro tuplaLibroCant unLibro2 librosValidos |
+	
+	carrito := Carrito createNew.
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: '9780201184624'.
+	librosValidos add: '9780201113723'.
+	
+	unLibro := '9780201184624'.
+	unLibro2 := '9780201113723'.
+	
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 2 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro2.
+	tuplaLibroCant add: 2.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:42:37' prior: 50863211!
+test03
+
+	| carrito unLibro tuplaLibroCant unLibro2 librosValidos |
+	
+	unLibro := '9780201184624'.
+	unLibro2 := '9780201113723'.	
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: unLibro.
+	librosValidos add: unLibro2.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+		
+	carrito add: unLibro amount: 4.
+	carrito add: unLibro2 amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 2 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro2.
+	tuplaLibroCant add: 2.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.! !
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:42:42'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:42:42'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:42:42'!
+ERROR!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:42:42'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:42:42'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:42:42'!
+ERROR!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:43:16'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:43:16'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:43:16'!
+ERROR!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:43:16'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:43:16'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:43:16'!
+ERROR!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:43:51' prior: 50859551!
+test02
+
+	| carrito unLibro librosValidos |
+	
+	unLibro := '9780201113723'.
+	
+	librosValidos := OrderedCollection new.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:44:08' prior: 50863291!
+test02
+
+	| carrito unLibro librosValidos |
+	
+	unLibro := '9780201113723'.
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: unLibro.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	carrito add: unLibro.
+	
+	self deny: carrito isEmpty.
+	! !
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:44:14'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:44:14'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:44:14'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:44:14'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:44:14'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:44:27' prior: 50859416!
+test01
+
+	| carrito |
+	
+	carrito := Carrito createNewWithAllowedList: ''.
+	
+	self assert: carrito isEmpty.
+	! !
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:44:28'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:44:28'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:44:28'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:44:28'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:44:28'!
+PASSED!
+
+!methodRemoval: Carrito #initialize stamp: 'G.L.S 6/9/2021 18:44:39'!
+initialize
+	books := OrderedCollection new.!
+
+!methodRemoval: Carrito class #createNew stamp: 'G.L.S 6/9/2021 18:44:44'!
+createNew
+	^self new initialize.!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:44:51'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:44:51'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:44:51'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:44:51'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:48:07' overrides: 16927572!
+setUp! !
+
+!classDefinition: #XXXTest category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:48:39'!
+TestCase subclass: #XXXTest
+	instanceVariableNames: 'libro1'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+
+!classDefinition: #XXXTest category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:48:40'!
+TestCase subclass: #XXXTest
+	instanceVariableNames: 'libro1 libro2'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+
+!classDefinition: #XXXTest category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:48:41'!
+TestCase subclass: #XXXTest
+	instanceVariableNames: 'libro1 libro2 libro3'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:48:36' prior: 50863356 overrides: 16927572!
+setUp
+
+	libro1 := 0.
+	libro2 := 0.
+	libro3 := 0.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:49:13' prior: 50863382 overrides: 16927572!
+setUp
+
+	libro1 := '9780201113723'.
+	libro2 := 0.
+	libro3 := 0.! !
+
+!classDefinition: #XXXTest category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:49:23'!
+TestCase subclass: #XXXTest
+	instanceVariableNames: 'smalltalk80 libro2 libro3'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!XXXTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:49:23' prior: 50863387 overrides: 16927572!
+setUp
+
+	smalltalk80 := '9780201113723'.
+	libro2 := 0.
+	libro3 := 0.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:49:50' prior: 50863401 overrides: 16927572!
+setUp
+
+	smalltalk80 := '9780201113723'.
+	libro2 := '9780201184624'.
+	libro3 := 0.! !
+
+!classDefinition: #XXXTest category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:50:06'!
+TestCase subclass: #XXXTest
+	instanceVariableNames: 'smalltalk80 designPatters libro3'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!XXXTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:50:06' prior: 50863407 overrides: 16927572!
+setUp
+
+	smalltalk80 := '9780201113723'.
+	designPatters := '9780201184624'.
+	libro3 := 0.! !
+
+!classDefinition: #XXXTest category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:50:16'!
+TestCase subclass: #XXXTest
+	instanceVariableNames: 'smalltalk80 designPatterns libro3'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!XXXTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:50:16' prior: 50863422 overrides: 16927572!
+setUp
+
+	smalltalk80 := '9780201113723'.
+	designPatterns := '9780201184624'.
+	libro3 := 0.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:50:27' prior: 50863437 overrides: 16927572!
+setUp
+
+	smalltalk80 := '9780201113723'.
+	designPatterns := '9780201184624'.
+	libro3 := '9780735619654'.! !
+
+!classDefinition: #XXXTest category: 'Ejercicio-Libros' stamp: 'G.L.S 6/9/2021 18:50:37'!
+TestCase subclass: #XXXTest
+	instanceVariableNames: 'smalltalk80 designPatterns objectThinking'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!XXXTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/9/2021 18:50:37' prior: 50863444 overrides: 16927572!
+setUp
+
+	smalltalk80 := '9780201113723'.
+	designPatterns := '9780201184624'.
+	objectThinking := '9780735619654'.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:51:05' prior: 50863301!
+test02
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80 .
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	carrito add: smalltalk80.
+	
+	self deny: carrito isEmpty.
+	! !
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:51:08'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:51:08'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:51:08'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:51:08'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:51:08'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:51:59' prior: 50863238!
+test03
+
+	| carrito tuplaLibroCant unLibro2 librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	librosValidos add: designPatterns.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+		
+	carrito add: smalltalk80 amount: 4.
+	carrito add: designPatterns amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: smalltalk80.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 2 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: unLibro2.
+	tuplaLibroCant add: 2.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.! !
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:52:23' prior: 50863488!
+test03
+
+	| carrito tuplaLibroCant librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	librosValidos add: designPatterns.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+		
+	carrito add: smalltalk80 amount: 4.
+	carrito add: designPatterns amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: smalltalk80.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 2 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: designPatterns .
+	tuplaLibroCant add: 2.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.! !
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:52:27'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:52:27'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:52:27'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:52:27'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:52:27'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:52:47' prior: 50863157!
+test04
+
+	| carrito unLibro librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: designPatterns.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		unLibro := smalltalk80.
+		carrito add: unLibro.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Carrito errorBookNotInAllowedList.
+			].
+	! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:52:48'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:52:48'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:52:48'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:52:48'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:52:48'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/9/2021 18:53:03' prior: 50863551!
+test04
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: designPatterns.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Carrito errorBookNotInAllowedList.
+			].
+	! !
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:53:05'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/9/2021 18:53:05'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/9/2021 18:53:05'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/9/2021 18:53:05'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/9/2021 18:53:05'!
+PASSED!
+
+----QUIT----(9 June 2021 18:55:59) CuisUniversity-4532.image priorSource: 16887590!
+
+----STARTUP---- (10 June 2021 13:32:39) as /media/Datos/Cuis/Ej-Libros/linux64/CuisUniversity-4532.image!
+
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 13:34:03'!
+test05
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 1.5.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Carrito errorAmountNotInteger.
+			].
+	! !
+
+!testRun: #XXXTest #test05 stamp: 'G.L.S 6/10/2021 13:34:09'!
+FAILURE!
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/10/2021 13:34:42' prior: 50863059!
+add: aBook amount: anAmount 
+	| tuplaLibroCant |
+	
+	self assertBookIsAllowed: aBook.
+	self assertAmountIsValid: anAmount.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: aBook.
+	tuplaLibroCant add: anAmount.
+	
+	books add: tuplaLibroCant.! !
+
+!testRun: #XXXTest #test05 stamp: 'G.L.S 6/10/2021 13:34:49'!
+ERROR!
+!Carrito class methodsFor: 'errors' stamp: 'G.L.S 6/10/2021 13:35:06'!
+errorAmountNotInteger
+	self shouldBeImplemented.! !
+!Carrito class methodsFor: 'errors' stamp: 'G.L.S 6/10/2021 13:35:33' prior: 50863638!
+errorAmountNotInteger
+	^'Error - La cantidad tiene que ser un número entero'.! !
+
+!testRun: #XXXTest #test05 stamp: 'G.L.S 6/10/2021 13:35:36'!
+FAILURE!
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/10/2021 13:37:08'!
+assertAmountIsValid: anAmount.
+
+	anAmount isInteger ifFalse: [self error: self class errorAmountNotInteger].! !
+
+!testRun: #XXXTest #test05 stamp: 'G.L.S 6/10/2021 13:37:13'!
+PASSED!
+
+!testRun: #XXXTest #test05 stamp: 'G.L.S 6/10/2021 13:37:17'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 13:37:40'!
+test06
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: -1.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Carrito errorAmountNegative.
+			].
+	! !
+
+!testRun: #XXXTest #test06 stamp: 'G.L.S 6/10/2021 13:37:47'!
+FAILURE!
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/10/2021 13:38:29' prior: 50863650!
+assertAmountIsValid: anAmount.
+
+	(anAmount isInteger) ifFalse: [self error: self class errorAmountNotInteger].! !
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/10/2021 13:39:15' prior: 50863677!
+assertAmountIsValid: anAmount.
+
+	(anAmount isInteger) ifFalse: [self error: self class errorAmountNotInteger].
+	(anAmount < 0) ifFalse: [self error: self class errorAmountNegative]. ! !
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/10/2021 13:39:19' prior: 50863684!
+assertAmountIsValid: anAmount.
+
+	(anAmount isInteger) ifFalse: [self error: self class errorAmountNotInteger].
+	(anAmount < 0) ifFalse: [self error: self class errorAmountNegative].! !
+
+!testRun: #XXXTest #test06 stamp: 'G.L.S 6/10/2021 13:39:25'!
+FAILURE!
+!Carrito class methodsFor: 'errors' stamp: 'G.L.S 6/10/2021 13:39:58'!
+errorAmountNegative
+	^'Error - '.! !
+!Carrito class methodsFor: 'errors' stamp: 'G.L.S 6/10/2021 13:40:37' prior: 50863704!
+errorAmountNegative
+	^'Error - La cantidad no puede ser negativa'.! !
+
+!testRun: #XXXTest #test06 stamp: 'G.L.S 6/10/2021 13:46:48'!
+FAILURE!
+
+!testRun: #XXXTest #test06 stamp: 'G.L.S 6/10/2021 13:46:48'!
+FAILURE!
+
+!testRun: #XXXTest #test06 stamp: 'G.L.S 6/10/2021 13:46:55'!
+FAILURE!
+
+!testRun: #XXXTest #test06 stamp: 'G.L.S 6/10/2021 13:47:07'!
+FAILURE!
+
+!testRun: #XXXTest #test06 stamp: 'G.L.S 6/10/2021 13:47:07'!
+FAILURE!
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/10/2021 13:47:49' prior: 50863693!
+assertAmountIsValid: anAmount.
+
+	(anAmount isInteger) ifFalse: [self error: self class errorAmountNotInteger].
+	(anAmount < 0) ifTrue: [self error: self class errorAmountNegative].! !
+
+!testRun: #XXXTest #test06 stamp: 'G.L.S 6/10/2021 13:47:54'!
+PASSED!
+!XXXTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 13:48:15'!
+test07
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Carrito createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 0.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Carrito errorAmountZero.
+			].
+	! !
+
+!testRun: #XXXTest #test07 stamp: 'G.L.S 6/10/2021 13:48:32'!
+FAILURE!
+!Carrito class methodsFor: 'errors' stamp: 'G.L.S 6/10/2021 13:49:02'!
+errorAmountZero
+	^'Error - La cantidad de libros no puede ser 0'.! !
+!Carrito methodsFor: 'operations' stamp: 'G.L.S 6/10/2021 13:49:35' prior: 50863725!
+assertAmountIsValid: anAmount.
+
+	(anAmount isInteger) ifFalse: [self error: self class errorAmountNotInteger].
+	(anAmount < 0) ifTrue: [self error: self class errorAmountNegative].
+	(anAmount = 0) ifTrue: [self error: self class errorAmountZero].! !
+
+!testRun: #XXXTest #test07 stamp: 'G.L.S 6/10/2021 13:49:41'!
+PASSED!
+
+!testRun: #XXXTest #test01 stamp: 'G.L.S 6/10/2021 13:49:41'!
+PASSED!
+
+!testRun: #XXXTest #test02 stamp: 'G.L.S 6/10/2021 13:49:41'!
+PASSED!
+
+!testRun: #XXXTest #test03 stamp: 'G.L.S 6/10/2021 13:49:41'!
+PASSED!
+
+!testRun: #XXXTest #test04 stamp: 'G.L.S 6/10/2021 13:49:41'!
+PASSED!
+
+!testRun: #XXXTest #test05 stamp: 'G.L.S 6/10/2021 13:49:41'!
+PASSED!
+
+!testRun: #XXXTest #test06 stamp: 'G.L.S 6/10/2021 13:49:41'!
+PASSED!
+
+!testRun: #XXXTest #test07 stamp: 'G.L.S 6/10/2021 13:49:41'!
+PASSED!
+
+!classRenamed: #XXXTest as: #CarritoTest stamp: 'G.L.S 6/10/2021 13:49:54'!
+Smalltalk renameClassNamed: #XXXTest as: #CarritoTest!
+
+Object subclass: #ItemCarrito
+	instanceVariableNames: 'book amount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+
+!classDefinition: #ItemCarrito category: 'Ejercicio-Libros' stamp: 'G.L.S 6/10/2021 13:51:48'!
+Object subclass: #ItemCarrito
+	instanceVariableNames: 'book amount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+
+!classDefinition: #Carrito category: 'Ejercicio-Libros' stamp: 'G.L.S 6/10/2021 13:52:04'!
+Object subclass: #Carrito
+	instanceVariableNames: 'books allowedBooks'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!ItemCarrito class methodsFor: 'no messages' stamp: 'G.L.S 6/10/2021 14:01:18'!
+for: aBook amount: anAmount
+
+	^self initializeFor: aBook withAmount: anAmount.! !
+!ItemCarrito methodsFor: 'nil' stamp: 'G.L.S 6/10/2021 14:01:46'!
+initializeFor: aBook withAmount: anAmount! !
+!ItemCarrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:02:13' prior: 50863814!
+initializeFor: aBook withAmount: anAmount
+	book = aBook.
+	amount = anAmount.! !
+!ItemCarrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:02:16' prior: 50863819!
+initializeFor: aBook withAmount: anAmount
+
+	book = aBook.
+	amount = anAmount.! !
+!ItemCarrito methodsFor: 'nil' stamp: 'G.L.S 6/10/2021 14:03:46'!
+book
+	^book.! !
+!ItemCarrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:03:55'!
+amount
+	^amount! !
+!ItemCarrito methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:03:56' prior: 50863834!
+amount
+	^amount.! !
+
+!classRenamed: #Carrito as: #Cart stamp: 'G.L.S 6/10/2021 14:05:03'!
+Smalltalk renameClassNamed: #Carrito as: #Cart!
+!CarritoTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:05:03' prior: 50863608!
+test05
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 1.5.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountNotInteger.
+			].
+	! !
+!CarritoTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:05:03' prior: 50863660!
+test06
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: -1.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountNegative.
+			].
+	! !
+!CarritoTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:05:03' prior: 50863514!
+test03
+
+	| carrito tuplaLibroCant librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	librosValidos add: designPatterns.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+		
+	carrito add: smalltalk80 amount: 4.
+	carrito add: designPatterns amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: smalltalk80.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 2 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: designPatterns .
+	tuplaLibroCant add: 2.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.! !
+!CarritoTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:05:03' prior: 50863467!
+test02
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80 .
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	carrito add: smalltalk80.
+	
+	self deny: carrito isEmpty.
+	! !
+!CarritoTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:05:03' prior: 50863323!
+test01
+
+	| carrito |
+	
+	carrito := Cart createNewWithAllowedList: ''.
+	
+	self assert: carrito isEmpty.
+	! !
+!CarritoTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:05:03' prior: 50863577!
+test04
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: designPatterns.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorBookNotInAllowedList.
+			].
+	! !
+!CarritoTest methodsFor: 'as yet unclassified' stamp: 'G.L.S 6/10/2021 14:05:03' prior: 50863736!
+test07
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 0.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountZero.
+			].
+	! !
+
+!testRun: #CarritoTest #test01 stamp: 'G.L.S 6/10/2021 14:05:15'!
+PASSED!
+
+!testRun: #CarritoTest #test02 stamp: 'G.L.S 6/10/2021 14:05:15'!
+PASSED!
+
+!testRun: #CarritoTest #test03 stamp: 'G.L.S 6/10/2021 14:05:15'!
+PASSED!
+
+!testRun: #CarritoTest #test04 stamp: 'G.L.S 6/10/2021 14:05:15'!
+PASSED!
+
+!testRun: #CarritoTest #test05 stamp: 'G.L.S 6/10/2021 14:05:15'!
+PASSED!
+
+!testRun: #CarritoTest #test06 stamp: 'G.L.S 6/10/2021 14:05:15'!
+PASSED!
+
+!testRun: #CarritoTest #test07 stamp: 'G.L.S 6/10/2021 14:05:15'!
+PASSED!
+
+!classRenamed: #CarritoTest as: #CartTest stamp: 'G.L.S 6/10/2021 14:05:22'!
+Smalltalk renameClassNamed: #CarritoTest as: #CartTest!
+
+!testRun: #CartTest #test01 stamp: 'G.L.S 6/10/2021 14:05:27'!
+PASSED!
+
+!testRun: #CartTest #test02 stamp: 'G.L.S 6/10/2021 14:05:27'!
+PASSED!
+
+!testRun: #CartTest #test03 stamp: 'G.L.S 6/10/2021 14:05:27'!
+PASSED!
+
+!testRun: #CartTest #test04 stamp: 'G.L.S 6/10/2021 14:05:27'!
+PASSED!
+
+!testRun: #CartTest #test05 stamp: 'G.L.S 6/10/2021 14:05:27'!
+PASSED!
+
+!testRun: #CartTest #test06 stamp: 'G.L.S 6/10/2021 14:05:27'!
+PASSED!
+
+!testRun: #CartTest #test07 stamp: 'G.L.S 6/10/2021 14:05:27'!
+PASSED!
+
+!classRenamed: #ItemCarrito as: #CartItem stamp: 'G.L.S 6/10/2021 14:05:39'!
+Smalltalk renameClassNamed: #ItemCarrito as: #CartItem!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:06:27'!
+test01CartThatWasJustCreatedIsEmpty
+
+	| carrito |
+	
+	carrito := Cart createNewWithAllowedList: ''.
+	
+	self assert: carrito isEmpty.
+	! !
+
+!methodRemoval: CartTest #test01 stamp: 'G.L.S 6/10/2021 14:06:27'!
+test01
+
+	| carrito |
+	
+	carrito := Cart createNewWithAllowedList: ''.
+	
+	self assert: carrito isEmpty.
+	!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:07:00'!
+test02CartWithAnItemIsNotEmpty
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80 .
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	carrito add: smalltalk80.
+	
+	self deny: carrito isEmpty.
+	! !
+
+!methodRemoval: CartTest #test02 stamp: 'G.L.S 6/10/2021 14:07:00'!
+test02
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80 .
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	carrito add: smalltalk80.
+	
+	self deny: carrito isEmpty.
+	!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:12:05'!
+test03CartWithSeveralItemsAddedContainsTheRightItemsAndAmounts
+
+	| carrito tuplaLibroCant librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	librosValidos add: designPatterns.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+		
+	carrito add: smalltalk80 amount: 4.
+	carrito add: designPatterns amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: smalltalk80.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 2 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: designPatterns .
+	tuplaLibroCant add: 2.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.! !
+
+!methodRemoval: CartTest #test03 stamp: 'G.L.S 6/10/2021 14:12:05'!
+test03
+
+	| carrito tuplaLibroCant librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	librosValidos add: designPatterns.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+		
+	carrito add: smalltalk80 amount: 4.
+	carrito add: designPatterns amount: 2.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: smalltalk80.
+	tuplaLibroCant add: 4.
+	
+	self deny: carrito isEmpty.
+	self assert: 2 equals: carrito listItems size.
+	self assert: tuplaLibroCant equals: carrito listItems first.
+	
+	tuplaLibroCant := OrderedCollection new.
+	tuplaLibroCant add: designPatterns .
+	tuplaLibroCant add: 2.
+	
+	self assert: tuplaLibroCant equals: carrito listItems second.!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:17:49'!
+test04CartCannotAddItemsThatAreNotAllowed
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: designPatterns.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorBookNotInAllowedList.
+			].
+	! !
+
+!methodRemoval: CartTest #test04 stamp: 'G.L.S 6/10/2021 14:17:49'!
+test04
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: designPatterns.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorBookNotInAllowedList.
+			].
+	!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:18:31'!
+test05CartCannotAddANonIntegerAmountOfAnItem
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 1.5.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountNotInteger.
+			].
+	! !
+
+!methodRemoval: CartTest #test05 stamp: 'G.L.S 6/10/2021 14:18:31'!
+test05
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 1.5.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountNotInteger.
+			].
+	!
+
+!classRemoval: #XXX stamp: 'G.L.S 6/10/2021 14:18:47'!
+Object subclass: #XXX
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:19:33'!
+test06CartCannotAddANegativeAmountOfAnItem
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: -1.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountNegative.
+			].
+	! !
+
+!methodRemoval: CartTest #test06 stamp: 'G.L.S 6/10/2021 14:19:33'!
+test06
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: -1.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountNegative.
+			].
+	!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:20:05'!
+test07CartCannotAddAZeroAmountOfAnItem
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 0.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountZero.
+			].
+	! !
+
+!methodRemoval: CartTest #test07 stamp: 'G.L.S 6/10/2021 14:20:05'!
+test07
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 0.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountZero.
+			].
+	!
+
+!testRun: #CartTest #test01CartThatWasJustCreatedIsEmpty stamp: 'G.L.S 6/10/2021 14:37:11'!
+PASSED!
+
+!testRun: #CartTest #test02CartWithAnItemIsNotEmpty stamp: 'G.L.S 6/10/2021 14:37:11'!
+PASSED!
+
+!testRun: #CartTest #test03CartWithSeveralItemsAddedContainsTheRightItemsAndAmounts stamp: 'G.L.S 6/10/2021 14:37:11'!
+PASSED!
+
+!testRun: #CartTest #test04CartCannotAddItemsThatAreNotAllowed stamp: 'G.L.S 6/10/2021 14:37:11'!
+PASSED!
+
+!testRun: #CartTest #test05CartCannotAddANonIntegerAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:37:11'!
+PASSED!
+
+!testRun: #CartTest #test06CartCannotAddANegativeAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:37:11'!
+PASSED!
+
+!testRun: #CartTest #test07CartCannotAddAZeroAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:37:11'!
+PASSED!
+
+!classRemoval: #CartItem stamp: 'G.L.S 6/10/2021 14:52:12'!
+Object subclass: #CartItem
+	instanceVariableNames: 'book amount'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Ejercicio-Libros'!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:55:51'!
+testCartFailToAdd: aBook withAmount: anAmount whileAllowing: aBookList expectingErrorMessage: anErrorMessage
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	aBookList do: [:aBookToAllow | librosValidos add: aBookToAllow.].
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: aBook amount: 0.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountZero.
+			].
+	! !
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:56:14' prior: 50864222!
+testCartFailToAdd: aBook withAmount: anAmount whileAllowing: aBookList expectingErrorMessage: anErrorMessage
+
+	| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	aBookList do: [:aBookToAllow | librosValidos add: aBookToAllow.].
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: aBook amount: anAmount.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: anErrorMessage.
+			].
+	! !
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:58:16' prior: 50864164!
+test07CartCannotAddAZeroAmountOfAnItem
+
+	"| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 0.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountZero.
+			]."
+	
+	self testCartFailToAdd: smalltalk80 
+		withAmount: 0
+		whileAllowing: {smalltalk80.}  
+		expectingErrorMessage: Cart errorAmountZero. 
+	! !
+
+!testRun: #CartTest #test07CartCannotAddAZeroAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:58:18'!
+PASSED!
+
+!testRun: #CartTest #test01CartThatWasJustCreatedIsEmpty stamp: 'G.L.S 6/10/2021 14:58:18'!
+PASSED!
+
+!testRun: #CartTest #test02CartWithAnItemIsNotEmpty stamp: 'G.L.S 6/10/2021 14:58:18'!
+PASSED!
+
+!testRun: #CartTest #test03CartWithSeveralItemsAddedContainsTheRightItemsAndAmounts stamp: 'G.L.S 6/10/2021 14:58:18'!
+PASSED!
+
+!testRun: #CartTest #test04CartCannotAddItemsThatAreNotAllowed stamp: 'G.L.S 6/10/2021 14:58:18'!
+PASSED!
+
+!testRun: #CartTest #test05CartCannotAddANonIntegerAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:58:18'!
+PASSED!
+
+!testRun: #CartTest #test06CartCannotAddANegativeAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:58:18'!
+PASSED!
+
+!testRun: #CartTest #test07CartCannotAddAZeroAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:58:18'!
+PASSED!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:58:28' prior: 50864258!
+test07CartCannotAddAZeroAmountOfAnItem
+	
+	self testCartFailToAdd: smalltalk80 
+		withAmount: 0
+		whileAllowing: {smalltalk80.}  
+		expectingErrorMessage: Cart errorAmountZero. 
+	! !
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:58:29' prior: 50864305!
+test07CartCannotAddAZeroAmountOfAnItem
+	
+	self testCartFailToAdd: smalltalk80 
+		withAmount: 0
+		whileAllowing: {smalltalk80.}  
+		expectingErrorMessage: Cart errorAmountZero.
+	! !
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:58:57' prior: 50864135!
+test06CartCannotAddANegativeAmountOfAnItem
+
+	"| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: -1.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountNegative.
+			]."
+	
+	self testCartFailToAdd: smalltalk80 
+		withAmount: -1
+		whileAllowing: {smalltalk80.}  
+		expectingErrorMessage: Cart errorAmountNegative.! !
+
+!testRun: #CartTest #test06CartCannotAddANegativeAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:59:01'!
+PASSED!
+
+!testRun: #CartTest #test01CartThatWasJustCreatedIsEmpty stamp: 'G.L.S 6/10/2021 14:59:01'!
+PASSED!
+
+!testRun: #CartTest #test02CartWithAnItemIsNotEmpty stamp: 'G.L.S 6/10/2021 14:59:01'!
+PASSED!
+
+!testRun: #CartTest #test03CartWithSeveralItemsAddedContainsTheRightItemsAndAmounts stamp: 'G.L.S 6/10/2021 14:59:01'!
+PASSED!
+
+!testRun: #CartTest #test04CartCannotAddItemsThatAreNotAllowed stamp: 'G.L.S 6/10/2021 14:59:01'!
+PASSED!
+
+!testRun: #CartTest #test05CartCannotAddANonIntegerAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:59:01'!
+PASSED!
+
+!testRun: #CartTest #test06CartCannotAddANegativeAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:59:01'!
+PASSED!
+
+!testRun: #CartTest #test07CartCannotAddAZeroAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:59:01'!
+PASSED!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:59:07' prior: 50864323!
+test06CartCannotAddANegativeAmountOfAnItem
+	
+	self testCartFailToAdd: smalltalk80 
+		withAmount: -1
+		whileAllowing: {smalltalk80.}  
+		expectingErrorMessage: Cart errorAmountNegative.! !
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:59:34' prior: 50864100!
+test05CartCannotAddANonIntegerAmountOfAnItem
+
+	"| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: smalltalk80.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80 amount: 1.5.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorAmountNotInteger.
+			]."
+	
+	self testCartFailToAdd: smalltalk80 
+		withAmount: 1.5
+		whileAllowing: {smalltalk80.}  
+		expectingErrorMessage: Cart errorAmountNotInteger.
+	! !
+
+!testRun: #CartTest #test05CartCannotAddANonIntegerAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:59:36'!
+PASSED!
+
+!testRun: #CartTest #test01CartThatWasJustCreatedIsEmpty stamp: 'G.L.S 6/10/2021 14:59:36'!
+PASSED!
+
+!testRun: #CartTest #test02CartWithAnItemIsNotEmpty stamp: 'G.L.S 6/10/2021 14:59:36'!
+PASSED!
+
+!testRun: #CartTest #test03CartWithSeveralItemsAddedContainsTheRightItemsAndAmounts stamp: 'G.L.S 6/10/2021 14:59:36'!
+PASSED!
+
+!testRun: #CartTest #test04CartCannotAddItemsThatAreNotAllowed stamp: 'G.L.S 6/10/2021 14:59:36'!
+PASSED!
+
+!testRun: #CartTest #test05CartCannotAddANonIntegerAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:59:36'!
+PASSED!
+
+!testRun: #CartTest #test06CartCannotAddANegativeAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:59:36'!
+PASSED!
+
+!testRun: #CartTest #test07CartCannotAddAZeroAmountOfAnItem stamp: 'G.L.S 6/10/2021 14:59:36'!
+PASSED!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 14:59:42' prior: 50864379!
+test05CartCannotAddANonIntegerAmountOfAnItem
+	
+	self testCartFailToAdd: smalltalk80 
+		withAmount: 1.5
+		whileAllowing: {smalltalk80.}  
+		expectingErrorMessage: Cart errorAmountNotInteger.
+	! !
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 15:00:13' prior: 50864072!
+test04CartCannotAddItemsThatAreNotAllowed
+
+	"| carrito librosValidos |
+	
+	librosValidos := OrderedCollection new.
+	librosValidos add: designPatterns.
+	
+	carrito := Cart createNewWithAllowedList: librosValidos.
+	
+	self should: [
+		carrito add: smalltalk80.
+		]
+		raise: Error  
+		withExceptionDo: [
+			:anError |
+			self assert: anError messageText equals: Cart errorBookNotInAllowedList.
+			]."
+		
+	self testCartFailToAdd: smalltalk80 
+		withAmount: 1
+		whileAllowing: {designPatterns.}  
+		expectingErrorMessage: Cart errorBookNotInAllowedList.
+	! !
+
+!testRun: #CartTest #test04CartCannotAddItemsThatAreNotAllowed stamp: 'G.L.S 6/10/2021 15:00:15'!
+PASSED!
+
+!testRun: #CartTest #test01CartThatWasJustCreatedIsEmpty stamp: 'G.L.S 6/10/2021 15:00:15'!
+PASSED!
+
+!testRun: #CartTest #test02CartWithAnItemIsNotEmpty stamp: 'G.L.S 6/10/2021 15:00:15'!
+PASSED!
+
+!testRun: #CartTest #test03CartWithSeveralItemsAddedContainsTheRightItemsAndAmounts stamp: 'G.L.S 6/10/2021 15:00:15'!
+PASSED!
+
+!testRun: #CartTest #test04CartCannotAddItemsThatAreNotAllowed stamp: 'G.L.S 6/10/2021 15:00:15'!
+PASSED!
+
+!testRun: #CartTest #test05CartCannotAddANonIntegerAmountOfAnItem stamp: 'G.L.S 6/10/2021 15:00:15'!
+PASSED!
+
+!testRun: #CartTest #test06CartCannotAddANegativeAmountOfAnItem stamp: 'G.L.S 6/10/2021 15:00:15'!
+PASSED!
+
+!testRun: #CartTest #test07CartCannotAddAZeroAmountOfAnItem stamp: 'G.L.S 6/10/2021 15:00:15'!
+PASSED!
+!CartTest methodsFor: 'testing' stamp: 'G.L.S 6/10/2021 15:00:22' prior: 50864435!
+test04CartCannotAddItemsThatAreNotAllowed
+		
+	self testCartFailToAdd: smalltalk80 
+		withAmount: 1
+		whileAllowing: {designPatterns.}  
+		expectingErrorMessage: Cart errorBookNotInAllowedList.
+	! !

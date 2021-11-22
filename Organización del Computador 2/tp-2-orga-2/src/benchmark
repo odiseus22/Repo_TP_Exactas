@@ -1,0 +1,124 @@
+#!/bin/bash
+
+# Validar input y mostrar ayuda(kind of)
+if [[ $# != 1 ]]
+then
+	echo "Ejecuta todos los filtros sobre las imagenes de prueba una cantidad dada de iteraciones."
+	echo "Uso: ./benchmark iteraciones"
+	exit 2
+fi
+
+# Ejecutar un filtro una cantidad determinada de veces mandando el output a stdout(volcar a un archivo de texto
+# para levantar los datos en algun lenguaje mas apropiado para analizarlos)
+function benchmark {
+	filter=$1
+	imp=$2
+	params=$3
+	iters=$4
+	tag=$5
+	#echo "$tag"
+	echo "$(./build/tp2 $filter -i $imp -t $iters -v $params | tail -n $iters)"
+	rm *.bmp
+}
+
+# Algunos parametros para ejecutar el tp2
+filtros=('Ocultar' 'Descubrir' 'Zigzag' )
+#inputs=('img/BladeRunner.bmp img/2001ASpaceOdyssey.bmp' 'img/BladeRunnerOculto.bmp' )
+inputs=()
+
+for f in ./img/*.bmp; do
+	 #echo "Processing $f file.."
+
+	 inputs+=($f)
+	 done
+
+#echo ${inputs[@]}
+#for f in .img/*.bmp; do
+    # do some stuff here with "$f"
+    # remember to quote it or spaces may misbehave
+#    APENDEAR A INPUT
+#done
+
+
+
+#make clean > /dev/null
+#cp filters/Makefile.o0 filters/Makefile
+#make > /dev/null
+#for i in {0..2}
+#do
+#		if [ $i -eq 0 ];
+#			then
+#				echo "ENTRE AL IF"
+#  			benchmark ${filtros[i]} 'c' "${inputs[i]} ${inputs[i]}" $1 "${filtros[i]} c_o0" 
+#		fi
+#	benchmark ${filtros[i]} 'c' "${inputs[i]}" $1 "${filtros[i]} c_o0"
+#done
+
+
+
+
+
+
+#make clean > /dev/null
+#cp filters/Makefile.o0 filters/Makefile
+#make > /dev/null
+#echo "IMAGENES DE OCULTAR"
+#for i in "${inputs[@]}"
+#do
+
+ # 		benchmark ${filtros[0]} 'c' "$i $i" $1 "${filtros[0]} c_o0" 
+		
+#done
+
+
+make clean > /dev/null
+cp filters/Makefile.o0 filters/Makefile
+make > /dev/null
+
+
+echo "nombre,size,ms,clocks"
+for i in "${inputs[@]}"
+do
+
+  		benchmark ${filtros[2]} 'asm' "$i $i" $1 "${filtros[2]} asm" 
+		
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+make clean > /dev/null
+cp filters/Makefile.o3 filters/Makefile
+make > /dev/null
+
+
+
+
+
+
+
+
+#for i in {0..2}
+#do
+#	benchmark ${filtros[i]} 'c' "${inputs[i]}" $1 "${filtros[i]} c_o3"
+#done
+
+#for i in {0..2}
+#do
+#	benchmark ${filtros[i]} 'asm' "${inputs[i]}" $1 "${filtros[i]} asm"
+#done

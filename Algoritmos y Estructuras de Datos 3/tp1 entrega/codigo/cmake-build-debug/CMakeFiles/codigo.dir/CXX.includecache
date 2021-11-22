@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/helicopterodeataque/Desktop/tp1 entrega/codigo/main.cpp
+iostream
+-
+vector
+-
+tuple
+-
+list
+-
+chrono
+-
+cstdio
+-
+

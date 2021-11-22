@@ -1,0 +1,7 @@
+filtered ports 481
+closed ports 0
+open ports 481
+\begin{tabular}{|c|c|c|}
+\hline
+Puerto & servicio \\\hline
+\end{tabular}

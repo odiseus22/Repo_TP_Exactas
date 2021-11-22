@@ -1,0 +1,9 @@
+filtered ports 1023
+closed ports 0
+open ports 2
+\begin{tabular}{|c|c|c|}
+\hline
+Puerto & Servicio & Estado \\\hline
+80 & http & abierto \\ \hline
+443 & https & abierto \\ \hline
+\end{tabular}
