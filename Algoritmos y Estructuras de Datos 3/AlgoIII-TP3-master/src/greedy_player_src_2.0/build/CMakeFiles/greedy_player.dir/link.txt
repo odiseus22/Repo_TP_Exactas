@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/greedy_player.dir/main.cpp.o CMakeFiles/greedy_player.dir/jugadorGoloso.cpp.o CMakeFiles/greedy_player.dir/funcionesAuxiliares.cpp.o  -o greedy_player 

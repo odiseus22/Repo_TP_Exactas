@@ -1,0 +1,30 @@
+//con esto pude debugear bien como se lee y evalua el tablero en un caso particular
+
+tableroconalturas tdebug;// main para debugear, no es el main oficial
+    tdebug=iniciartablero(6,6);
+    ponerficha(tdebug,5,1);
+    ponerficha(tdebug,0,2);
+    ponerficha(tdebug,1,1);
+    jugadagolosa(tdebug,4,10000,1000,10,5);
+
+
+    tableroconalturas tdebug;// main para debugear, no es el main oficial
+        tdebug=iniciartablero(4,4);
+        ponerficha(tdebug,0,2);
+        ponerficha(tdebug,0,2);
+        ponerficha(tdebug,2,1);
+        jugadagolosa(tdebug,4,10000,1000,10,5);
+        return 0;
+
+
+//debugear al jugador goloso
+
+4 4 30 3 vos
+1
+1
+1
+1
+3
+2
+2
+gane

@@ -1,0 +1,3 @@
+/home/andial/Documents/git/src/greedy_player_src_2.0/build/CMakeFiles/rebuild_cache.dir
+/home/andial/Documents/git/src/greedy_player_src_2.0/build/CMakeFiles/greedy_player.dir
+/home/andial/Documents/git/src/greedy_player_src_2.0/build/CMakeFiles/edit_cache.dir

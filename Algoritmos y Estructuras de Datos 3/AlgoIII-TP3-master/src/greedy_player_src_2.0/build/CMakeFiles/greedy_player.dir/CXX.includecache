@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andial/Documents/git/src/greedy_player_src_2.0/funcionesAuxiliares.cpp
+funcionesAuxiliares.h
+/home/andial/Documents/git/src/greedy_player_src_2.0/funcionesAuxiliares.h
+
+/home/andial/Documents/git/src/greedy_player_src_2.0/funcionesAuxiliares.h
+iostream
+-
+vector
+-
+tuple
+-
+
+/home/andial/Documents/git/src/greedy_player_src_2.0/jugadorGoloso.cpp
+jugadorGoloso.h
+/home/andial/Documents/git/src/greedy_player_src_2.0/jugadorGoloso.h
+
+/home/andial/Documents/git/src/greedy_player_src_2.0/jugadorGoloso.h
+funcionesAuxiliares.h
+/home/andial/Documents/git/src/greedy_player_src_2.0/funcionesAuxiliares.h
+
+/home/andial/Documents/git/src/greedy_player_src_2.0/main.cpp
+iostream
+-
+vector
+-
+funcionesAuxiliares.cpp
+/home/andial/Documents/git/src/greedy_player_src_2.0/funcionesAuxiliares.cpp
+jugadorGoloso.cpp
+/home/andial/Documents/git/src/greedy_player_src_2.0/jugadorGoloso.cpp
+
