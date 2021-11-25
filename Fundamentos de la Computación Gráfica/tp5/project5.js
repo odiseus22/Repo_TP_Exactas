@@ -219,6 +219,8 @@ window.onload = function()
 	}
 	
 	SetShininess( document.getElementById('shininess-exp') );
+
+	SetAmbientColor(document.getElementById('ambient-color'))
 	
 	// Dibujo la escena
 	DrawScene();
@@ -334,3 +336,9 @@ function SetShininess( param )
 	DrawScene();
 }
 
+// Color ambiente
+function SetAmbientColor( param )
+{
+	meshDrawer.setAmbientColor( param.value );
+	DrawScene();
+}

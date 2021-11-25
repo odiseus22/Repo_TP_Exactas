@@ -109,6 +109,7 @@ class MeshDrawer
 		this.unifShow = gl.getUniformLocation(this.prog, "show");
 		this.unifLightDir = gl.getUniformLocation(this.prog, "lightDir");
 		this.unifAlpha = gl.getUniformLocation(this.prog, "alpha");
+		this.unifAmbient = gl.getUniformLocation(this.prog, "ambient");
 		this.sampler = gl.getUniformLocation(this.prog, "texGPU")
 
 		// 3. Obtenemos los IDs de los atributos de los vértices en los shaders
@@ -127,7 +128,9 @@ class MeshDrawer
 			0, 1, 0, 0,
 			0, 0, 1, 0,
 			0, 0, 0, 1];
-		this.show = 1.0;
+		this.showTexture = true;
+		this.hasTexture = false;
+		this.ambientColor = [1.0, 1.0, 1.0, 1.0];
 	}
 	
 	// Esta función se llama cada vez que el usuario carga un nuevo
@@ -196,7 +199,8 @@ class MeshDrawer
 		gl.uniformMatrix4fv(this.unifMv, false,  matrixMV);
 		gl.uniformMatrix3fv(this.unifMn, false, matrixNormal);
 		gl.uniformMatrix4fv(this.unifSwap, false, this.swapTrans);
-		gl.uniform1f(this.unifShow, this.show);
+		gl.uniform4fv(this.unifAmbient, this.ambientColor);
+		gl.uniform1f(this.unifShow, this.showTexture && this.hasTexture ? 1 : 0);
 		gl.uniform1i(this.sampler, 0);
 
    		// 3. Habilitar atributos: vértices, normales, texturas
@@ -219,6 +223,7 @@ class MeshDrawer
 	// El argumento es un componente <img> de html que contiene la textura. 
 	setTexture( img )
 	{
+		this.hasTexture = true;
 		// [COMPLETAR] Binding de la textura
 		gl.bindTexture(gl.TEXTURE_2D, this.texture);
 
@@ -237,7 +242,7 @@ class MeshDrawer
 	showTexture( show )
 	{
 		// [COMPLETAR] Setear variables uniformes en el fragment shader para indicar si debe o no usar la textura
-		this.show = show ? 1.0 : 0.0;
+		this.showTexture = show;
 	}
 	
 	// Este método se llama al actualizar la dirección de la luz desde la interfaz
@@ -254,6 +259,14 @@ class MeshDrawer
 		// [COMPLETAR] Setear variables uniformes en el fragment shader para especificar el brillo.
 		gl.useProgram(this.prog);
 		gl.uniform1f(this.unifAlpha, shininess);
+	}
+
+	setAmbientColor(color) {
+		var r = parseInt(color.substr(1, 2), 16);
+		var g = parseInt(color.substr(3, 2), 16);
+		var b = parseInt(color.substr(5, 2), 16);
+
+		this.ambientColor = [r/256, g/256, b/256, 1.0];
 	}
 }
 
@@ -274,6 +287,7 @@ var meshVS = `
 	attribute vec3 normCoord;
 
 	uniform mat4 mvp;
+	uniform mat4 mv;
 	uniform mat4 swap;
 
 	varying vec2 v_texCoord;
@@ -284,7 +298,7 @@ var meshVS = `
 	{ 
 		gl_Position = mvp * swap * vec4(pos,1);
 		v_texCoord = texCoord;
-		v_vertCoord = vec4(pos, 1); // normalize(-(mv * vec4(pos, 1)));
+		v_vertCoord = normalize(-(mv * vec4(pos, 1))); // normalize(-(mv * vec4(pos, 1)));
 		v_normCoord = normCoord; // normalize(mn * normCoord);
 	}
 `;
@@ -302,30 +316,26 @@ var meshFS = `
 	uniform float show;
 	uniform vec3 lightDir;
 	uniform float alpha;
-	uniform mat4 mv;
 	uniform mat3 mn;
+	uniform vec4 ambient;
 
 	varying vec2 v_texCoord;
 	varying vec3 v_normCoord;
 	varying vec4 v_vertCoord;
 
+	vec4 Ks = vec4(1.0, 1.0, 1.0, 1.0);
+	vec4 I  = vec4(1.0, 1.0, 1.0, 1.0);
+	vec4 Ia = vec4(0.1, 0.1, 0.1, 1.0);
+
 	void main()
-	{		
-		vec4 Kd = show * texture2D(texGPU, v_texCoord) + (1.0 - show) * vec4( 1, 1, 1, 1 );
-		vec4 Ks = vec4(1, 1, 1, 1);
-		vec4 I = vec4(1, 1, 1, 1);
-		vec3 n = normalize(mn * v_normCoord);
-		vec3 v = vec3(normalize(-(mv * v_vertCoord)));
-		vec3 h = normalize(lightDir + v);
+	{
+		vec4 Kd = show * texture2D(texGPU, v_texCoord) + (1.0 - show) * I;
+		vec3 n  = normalize(mn * v_normCoord);
+		vec3 v  = vec3(v_vertCoord);
+		vec3 h  = normalize(lightDir + v);
 		float cos_t = dot(n, lightDir);
 		float cos_w = dot(n, h);
 
-		gl_FragColor = max(0.0, cos_t) * (Kd + Ks * pow(max(0.0, cos_w), alpha) / cos_t);
-
-		// if (show == 1.0) {
-		// 	gl_FragColor = texture2D(texGPU, v_texCoord);
-		// } else {
-		// 	gl_FragColor = vec4(1, 0, 0, 1);
-		// }
+		gl_FragColor = I * max(0.0, cos_t) * (Kd + Ks * pow(max(0.0, cos_w), alpha) / cos_t) + Ia * ambient;
 	}
 `;
