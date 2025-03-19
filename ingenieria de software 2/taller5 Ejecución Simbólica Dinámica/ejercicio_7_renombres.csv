@@ -1,0 +1,7 @@
+Iteración,Input Concreto,Condición de Ruta,Especificación para Z3,Resultado Z3,Renombres
+1,n= 0,not c1_0,iteracion1.smt,n= 1,"c1_i= (i < n) para i en [0, \inf)"
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,END,END,(u(c1)<=2),
